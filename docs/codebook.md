@@ -2,6 +2,7 @@
 
 This document defines the schema, field definitions, data types, and controlled vocabularies for all tabular datasets in the "Erase on Demand" repository:
 - `data/cases.csv` (Primary Case Dataset)
+- `data/actors.csv` (Actors Registry)
 - `data/comparative_cases.csv` (Contextual and Comparative Cases)
 - `data/sources.csv` (Evidence and Source Registry)
 
@@ -83,12 +84,14 @@ The primary dataset documents observed episodes where platform notice-and-action
 - `fraudster_protection`: Deletion of public records and investigations concerning financial scams, fraud, or money laundering.
 - `commercial_reputation_scrubbing`: Commercial contract service hired to purge negative reporting about wealthy individuals or businesses.
 - `activism_suppression`: Silencing human rights monitoring, environmental defense, or press-freedom activism.
+- `parliamentarily_recognised_censorship`: Takedown campaign formally identified and denounced in a parliamentary proceeding, official government statement, or regulatory body ruling as politically motivated censorship (e.g., UK Parliament Early Day Motion, EU Parliament question, national parliamentary committee finding).
 - `reputation_vendor_self_defense`: Takedowns directed against reports exposing the takedown vendors themselves (e.g., AiPlex notices against Techdirt).
 
 #### 1.2.6 `vendor_attribution`
 - `confirmed`: Attribution to a specific vendor/entity is established by direct domain email headers, admission, corporate registry link, or judicial/regulatory finding.
 - `claimed_affiliation`: Complainant used vendor's corporate name or domain in the notice, but third-party identity theft or spoofing cannot be completely excluded without raw headers.
 - `technical_forensic_attribution`: Attribution established via digital forensics (metadata analysis, shared network infrastructure, Lumen pattern clustering).
+- `self_admitted_sub_contractor`: Individual or entity has publicly or semi-publicly acknowledged working as a sub-contractor, affiliate, or agent for a named vendor, establishing a non-disputable contractual relationship without constituting a full `confirmed` corporate-level attribution (e.g., LinkedIn profile, marketplace listing, or court declaration).
 - `unattributed_proxy`: Notice submitted through disposable personal emails, shell entities, or proxies with unknown commercial ownership.
 
 #### 1.2.7 `platform_action`
@@ -155,3 +158,55 @@ The source registry provides full bibliographic and forensic provenance for ever
 | `vault_reference` | String | Internal ID for confidential/redacted evidence kept in closed vault (e.g., `VAULT-EML-2026-004`). |
 | `date_published` | String (YYYY-MM-DD) | Publication or notice generation date. |
 | `retrieved_at` | String (YYYY-MM-DD) | Date when evidence was collected and verified. |
+
+---
+
+## 4. Actors Registry: `data/actors.csv`
+
+The actors registry provides a normalized lookup table of all organizations, individuals, and platforms referenced across `cases.csv`. Each actor receives a stable `actor_id` enabling cross-case analysis of repeat offenders, corporate structures, and platform roles. The registry is maintained independently of individual case records to avoid data duplication and to allow actors to be updated as new corporate OSINT evidence emerges.
+
+### 4.1 Field Definitions and Types
+
+| Field Name | Type | Required | Description |
+|---|---|---|---|
+| `actor_id` | String | Yes | Unique stable identifier for the actor (e.g., `ACT-AIPLEX-001`, `ACT-ARES-001`, `ACT-RESPUBLIKA-001`). Primary key. |
+| `actor_name` | String | Yes | Canonical name of the actor as used in official registries or primary sources. |
+| `actor_type` | Enum | Yes | Organizational or individual classification. Controlled vocabulary (see §4.2.1). |
+| `actor_role` | Enum | Yes | Functional role of the actor within this dataset's analytical framework. Controlled vocabulary (see §4.2.2). |
+| `jurisdiction` | String (ISO 3166-1 alpha-2) | Yes | Primary country of incorporation, operation, or citizenship (e.g., `IN`, `ES`, `KZ`, `GB`). |
+| `registration_number` | String | No | Official corporate registration number from a primary government registry (e.g., MCA CIN, Companies House number, KvK number). |
+| `registration_source` | String | No | Name of the registry from which `registration_number` was obtained (e.g., `India MCA`, `UK Companies House`, `Netherlands KvK`, `Kenya Companies Registry`). |
+| `registration_url` | String | No | Direct URL to the actor's official registry entry. Should link to the primary government database, not a secondary aggregator. |
+| `parent_company` | String | No | `actor_id` of the parent entity if the actor is a subsidiary, division, or controlled affiliate. |
+| `known_clients` | String | No | Semicolon-separated list of known or alleged clients based on confirmed reporting or corporate disclosures (e.g., `Rosneft; Sberbank; [unnamed government agency KZ]`). |
+| `privileged_platform_access` | Enum | No | Whether the actor holds or claims Trusted Partner, Trusted Flagger, or equivalent privileged submission status on any major platform. Controlled vocabulary (see §4.2.3). |
+| `notes` | String | No | Additional context, links to pending OSINT tasks, or caveats about data reliability not captured by structured fields. |
+| `last_verified` | String (YYYY-MM-DD) | Yes | Date when the actor record was last reviewed against primary sources. |
+
+---
+
+### 4.2 Controlled Vocabularies for `actors.csv`
+
+#### 4.2.1 `actor_type`
+- `company`: Incorporated legal entity (limited company, LLC, private limited, etc.).
+- `individual`: Natural person acting in a professional capacity (e.g., freelance DMCA agent, sub-contractor).
+- `media_outlet`: Established news organization with editorial staff and published output.
+- `media_project`: Structured journalistic project operating under a named journalist or small team without full institutional status.
+- `civil_society_ngo`: Non-governmental organization, advocacy group, or press freedom body.
+- `platform`: Major internet platform or infrastructure provider subject to DSA or equivalent regulation.
+
+#### 4.2.2 `actor_role`
+- `vendor`: Commercial entity or individual providing reputation management, copyright enforcement, or link-removal services to clients.
+- `target`: Media outlet, journalist project, or civil society organization that was the subject of an enforcement action in `cases.csv`.
+- `platform`: Infrastructure provider that processed or executed the enforcement action.
+- `claimant`: Individual or entity named as the formal complainant in a notice or filing, which may or may not be the originating vendor.
+
+> **Note:** An actor may appear with multiple roles across different cases. For example, a vendor (`ACT-AIPLEX-001`) may also act as a direct `claimant` in specific notices. In such cases, the `actor_role` field records the actor's **primary** role in the dataset; cross-role appearances are captured through the `claimant_affiliation` field in `cases.csv`.
+
+#### 4.2.3 `privileged_platform_access`
+- `yes`: Actor demonstrably holds Trusted Partner, Trusted Flagger, or equivalent privileged submission status on at least one major platform, confirmed by platform disclosure or reliable third-party reporting.
+- `no`: Actor has no known privileged access; notices filed through standard public submission channels.
+- `claimed_but_unconfirmed_by_platform`: Actor publicly advertises or implies privileged platform access (e.g., marketing materials, client presentations), but the platform itself has not confirmed the status, or the platform's published Trusted Flagger/Partner lists do not include the actor.
+- `unknown`: Insufficient evidence to determine access level.
+
+> **DSA Relevance:** Under DSA Article 22, Trusted Flaggers must be established in the EU and awarded status by the relevant Digital Services Coordinator. Vendors advertising privileged access without verifiable EU establishment or official designation may constitute a misrepresentation relevant to Article 22 compliance assessments.
