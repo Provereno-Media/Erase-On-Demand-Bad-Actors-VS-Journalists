@@ -2,7 +2,7 @@
   "name": "erase-on-demand-dataset",
   "title": "Erase on Demand: Abuse of Platform Notice-and-Action Moderation Against Independent Journalism",
   "description": "Structured dataset of documented commercial reputation-management and copyright/trademark enforcement abuse against investigative newsrooms, media projects, and civil society organizations.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://github.com/Provereno-Media/Erase-On-Demand-Bad-Actors-VS-Journalists",
   "licenses": [
     {
@@ -143,6 +143,7 @@
                 "fraudster_protection",
                 "commercial_reputation_scrubbing",
                 "activism_suppression",
+                "parliamentarily_recognised_censorship",
                 "reputation_vendor_self_defense"
               ]
             }
@@ -182,6 +183,7 @@
                 "confirmed",
                 "claimed_affiliation",
                 "technical_forensic_attribution",
+                "self_admitted_sub_contractor",
                 "unattributed_proxy"
               ]
             }
@@ -280,6 +282,113 @@
           }
         ],
         "primaryKey": "case_id"
+      }
+    },
+    {
+      "name": "actors",
+      "path": "data/actors.csv",
+      "title": "Actors Registry (Vendors, Targets, Platforms, Claimants)",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "actor_id",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "actor_name",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "actor_type",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "company",
+                "individual",
+                "media_outlet",
+                "media_project",
+                "civil_society_ngo",
+                "platform"
+              ]
+            }
+          },
+          {
+            "name": "actor_role",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "vendor",
+                "target",
+                "platform",
+                "claimant"
+              ]
+            }
+          },
+          {
+            "name": "jurisdiction",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "registration_number",
+            "type": "string"
+          },
+          {
+            "name": "registration_source",
+            "type": "string"
+          },
+          {
+            "name": "registration_url",
+            "type": "string"
+          },
+          {
+            "name": "parent_company",
+            "type": "string"
+          },
+          {
+            "name": "known_clients",
+            "type": "string"
+          },
+          {
+            "name": "privileged_platform_access",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "yes",
+                "no",
+                "claimed_but_unconfirmed_by_platform",
+                "unknown"
+              ]
+            }
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          },
+          {
+            "name": "last_verified",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "primaryKey": "actor_id"
       }
     },
     {
