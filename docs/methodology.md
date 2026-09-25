@@ -162,3 +162,14 @@ Every case record carries a `last_verified` date. When new evidence changes a
 case's classification, confidence level, or attribution, the change is logged
 in `CHANGELOG.md` rather than silently overwritten, preserving an audit trail
 consistent with the project's evidentiary standards.
+
+## Disclosure of AI use
+
+The following large language models and AI tools were used in preparing this research:
+
+- **Perplexity Deep Research** — for an initial, region-focused collection of data on blocking and a preliminary search for connections between the companies behind it.
+- **Gemma 4 E4B** (deployed locally) and **Claude Sonnet 5** — for automated analysis of Lumen Database statistics and Google’s and Meta’s own reports on their implementation of the Digital Services Act (DSA).
+- **Tesari’s First Resort** — for gathering information about the companies behind the blocking and analyzing their connections.
+- **Perplexity Computer** with **Gemma 4 E4B** (deployed locally), **Claude Sonnet 5**, and **Gemini 3.8. Flash** — for normalizing and labeling the collected data before publication in an open repository.
+
+All data were independently verified by the study’s authors and editors.
