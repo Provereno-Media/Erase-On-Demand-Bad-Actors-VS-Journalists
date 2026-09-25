@@ -1,0 +1,420 @@
+{
+  "name": "erase-on-demand-dataset",
+  "title": "Erase on Demand: Abuse of Platform Notice-and-Action Moderation Against Independent Journalism",
+  "description": "Structured dataset of documented commercial reputation-management and copyright/trademark enforcement abuse against investigative newsrooms, media projects, and civil society organizations.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Provereno-Media/Erase-On-Demand-Bad-Actors-VS-Journalists",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0 International"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Provereno Media",
+      "role": "author",
+      "organization": "Provereno Media"
+    },
+    {
+      "title": "Pavel Bannikov",
+      "role": "lead_researcher"
+    }
+  ],
+  "resources": [
+    {
+      "name": "cases",
+      "path": "data/cases.csv",
+      "title": "Primary Case Dataset",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "case_id",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "campaign_id",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "target_name",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "target_type",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "investigative_media",
+                "civil_society_ngo",
+                "independent_journalist_project",
+                "commercial_media",
+                "corporate_litigant"
+              ]
+            }
+          },
+          {
+            "name": "target_country",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "platform",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "facebook",
+                "instagram",
+                "youtube",
+                "google_search",
+                "hosting_provider",
+                "cloud_storage",
+                "domain_registrar"
+              ]
+            }
+          },
+          {
+            "name": "account_or_asset",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "date_start",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "date_end",
+            "type": "string"
+          },
+          {
+            "name": "enforcement_basis",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "abuse_mechanism",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "fictitious_rights_claim",
+                "backdated_article",
+                "legitimate_looking_bad_faith",
+                "impersonation_claimant",
+                "fake_corporate_entity",
+                "prior_upload_scheme",
+                "automated_mass_filing"
+              ]
+            }
+          },
+          {
+            "name": "motive_category",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "political_state_censorship",
+                "fraudster_protection",
+                "commercial_reputation_scrubbing",
+                "activism_suppression",
+                "reputation_vendor_self_defense"
+              ]
+            }
+          },
+          {
+            "name": "claimant_name_as_reported",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "claimant_affiliation",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "claimant_identity_verified",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "yes",
+                "no",
+                "unknown"
+              ]
+            }
+          },
+          {
+            "name": "vendor_attribution",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "confirmed",
+                "claimed_affiliation",
+                "technical_forensic_attribution",
+                "unattributed_proxy"
+              ]
+            }
+          },
+          {
+            "name": "high_volume_sender",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "yes",
+                "no",
+                "unknown"
+              ]
+            }
+          },
+          {
+            "name": "sender_volume_evidence",
+            "type": "string"
+          },
+          {
+            "name": "platform_action",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "content_removal",
+                "account_deactivation",
+                "channel_termination",
+                "feature_restriction",
+                "strike_issued",
+                "service_interruption",
+                "unknown"
+              ]
+            }
+          },
+          {
+            "name": "appeal_outcome",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "restored_editorial_appeal",
+                "restored_formal_counternotice",
+                "rejected",
+                "pending",
+                "not_appealed",
+                "permanent_loss",
+                "unknown"
+              ]
+            }
+          },
+          {
+            "name": "failed_control",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "dsa_articles_implicated",
+            "type": "string"
+          },
+          {
+            "name": "confidence",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "Confirmed",
+                "Unverified",
+                "Plausible"
+              ]
+            }
+          },
+          {
+            "name": "summary",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "source_ids",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "last_verified",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "primaryKey": "case_id"
+      }
+    },
+    {
+      "name": "comparative_cases",
+      "path": "data/comparative_cases.csv",
+      "title": "Contextual and Comparative Cases",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "context_id",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "title",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "period",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "threat_type",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "exclusion_reason",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "summary",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "source_urls",
+            "type": "string"
+          }
+        ],
+        "primaryKey": "context_id"
+      }
+    },
+    {
+      "name": "sources",
+      "path": "data/sources.csv",
+      "title": "Evidence and Source Registry",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "source_id",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "source_type",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "title",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "author_or_publisher",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "url",
+            "type": "string"
+          },
+          {
+            "name": "archive_url",
+            "type": "string"
+          },
+          {
+            "name": "vault_reference",
+            "type": "string"
+          },
+          {
+            "name": "date_published",
+            "type": "string"
+          },
+          {
+            "name": "retrieved_at",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "primaryKey": "source_id"
+      }
+    }
+  ]
+}
