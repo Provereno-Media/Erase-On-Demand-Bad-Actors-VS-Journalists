@@ -3,7 +3,7 @@
 This repository documents verified cases of abuse of platform content-moderation
 and notice-and-takedown systems used to silence independent media, journalists'
 organizations, and civil society groups. The project is developed by Provereno
-Media under the Tech Accountability Grants program (EFCSN / CERV, GA 101236606).
+Media under the [Tech Accountability Grants program](https://efcsn.com/funding-opportunities/winners-tech-accountability-grants/) by the European Fact-Checking Standards Network.
 
 ## What this project studies
 
