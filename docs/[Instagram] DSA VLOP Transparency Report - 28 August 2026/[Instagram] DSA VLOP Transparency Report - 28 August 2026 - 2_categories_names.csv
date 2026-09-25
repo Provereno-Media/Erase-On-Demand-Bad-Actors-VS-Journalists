@@ -1,0 +1,128 @@
+Category label,Category description,Category of illegal content / incompatible with the terms and conditions,Contextual information 
+TOTAL,All the entries,TOTAL,
+Category 1,Animal welfare,STATEMENT_CATEGORY_ANIMAL_WELFARE,"Harm against animals is incorporated in our Community Standards related to coordinated harms, graphic violence, and regulated goods. Actions against those Community Standards are recorded in the appropriate categories."
+Category 1a,Animal harm,KEYWORD_ANIMAL_HARM,
+Category 1b,Unlawful sale of animals,KEYWORD_UNLAWFUL_SALE_ANIMALS,
+Category 2,Consumer information infringements,STATEMENT_CATEGORY_CONSUMER_INFORMATION,
+Category 2a,"Hidden advertisement or commercial communication, including by influencers ",KEYWORD_HIDDEN_ADVERTISEMENT,
+Category 2b,Insufficient information on traders ,KEYWORD_INSUFFICIENT_INFORMATION_ON_TRADERS,
+Category 2c,Misleading information about the characteristics of the goods and services,KEYWORD_MISLEADING_INFO_GOODS_SERVICES,
+Category 2d,Misleading information about the consumer’s rights ,KEYWORD_MISLEADING_INFO_CONSUMER_RIGHTS,
+Category 2e,Non-compliance with pricing regulations  ,KEYWORD_NONCOMPLIANCE_PRICING,
+Category 2f,Not captured by any other sub-category ,KEYWORD_OTHER_ADVERTISING,Added category to capture Article 10 data requests alleging advertisement(s) as the reason for the request.
+Category 2g,Not captured by any other sub-category ,KEYWORD_OTHER_DISCRIMINATORY_PRACTICES,Added category to record Article 9 member state order submissions alleging discriminatory practices or own initiative actions taken against our Advertising Standards on discriminatory practices
+Category 2h,Not captured by any other sub-category ,KEYWORD_OTHER_LEAD_ADS,Added category to capture own initiative actions taken against our product and format-specific policies pertaining to lead ads
+Category 2i,Not captured by any other sub-category ,KEYWORD_OTHER_CRYPTOCURRENCY,Added category to capture own initiative actions taken against our Advertising Standards on cryptocurrency products and services
+Category 2j,Not captured by any other sub-category ,KEYWORD_OTHER_PAYER_BENEFICIARY,Added category to record Article 9 member state order submissions alleging payer and beneficiary violations.
+Category 2k,Not captured by any other sub-category ,KEYWORD_OTHER_CONSUMER_INFRINGEMENTS,Added category to capture own initiative actions in the consumer information infringements category.
+Category 3,Cyber violence,STATEMENT_CATEGORY_CYBER_VIOLENCE,
+Category 3a,Cyber bullying and intimidation,KEYWORD_CYBER_BULLYING_INTIMIDATION,
+Category 3b,Cyber harassment,KEYWORD_CYBER_HARASSMENT,"Category is inclusive of Article 9 member state orders, Article 10 data requests, Article 16 notices and own initiative actions related to bullying and harassment."
+Category 3c,Cyber incitement to hatred or violence,KEYWORD_CYBER_INCITEMENT,
+Category 3d,Cyber stalking,KEYWORD_CYBER_STALKING,
+Category 3e,"Non-consensual (intimate) material sharing, including (image-based) sexual abuse (excluding content depicting minors)",KEYWORD_NON_CONSENSUAL_IMAGE_SHARING,
+Category 3f,Non-consensual sharing of material containing deepfake or similar technology using a third party's features (excluding content depicting minors),KEYWORD_NON_CONSENSUAL_MATERIAL_DEEPFAKE,
+Category 4,Cyber violence against women,STATEMENT_CATEGORY_CYBER_VIOLENCE_AGAINST_WOMEN,"Our Community Standards on cyber violence are applied to all users, including women. Actions taken for cyber violence violations are recorded in category 3 above."
+Category 4a,Cyber bullying and intimidation against girls,KEYWORD_BULLYING_AGAINST_GIRLS,
+Category 4b,Cyber harassment against women,KEYWORD_CYBER_HARASSMENT_AGAINST_WOMEN,
+Category 4c,Cyber stalking against women,KEYWORD_CYBER_STALKING_AGAINST_WOMEN,
+Category 4d,Gendered disinformation,KEYWORD_FEMALE_GENDERED_DISINFORMATION,
+Category 4e,Illegal incitement to violence and hatred against women,KEYWORD_INCITEMENT_AGAINST_WOMEN,
+Category 4f,"Non-consensual (intimate) material sharing against women, including (image-based) sexual abuse against women (excluding content depicting minors)",KEYWORD_NON_CONSENSUAL_IMAGE_SHARING_AGAINST_WOMEN,
+Category 4g,Non-consensual sharing of material containing deepfake or similar technology using a third party's features against women (excluding content depicting minors),KEYWORD_NON_CONSENSUAL_MATERIAL_DEEPFAKE_AGAINST_WOMEN,
+Category 5,Data protection and privacy violations,STATEMENT_CATEGORY_DATA_PROTECTION_AND_PRIVACY_VIOLATIONS,
+Category 5a,Biometric data breach,KEYWORD_BIOMETRIC_DATA_BREACH,
+Category 5b,Data falsification,KEYWORD_DATA_FALSIFICATION,
+Category 5c,Missing processing ground for data,KEYWORD_MISSING_PROCESSING_GROUND,
+Category 5d,Right to be forgotten,KEYWORD_RIGHT_TO_BE_FORGOTTEN,
+Category 5e,Not captured by any other sub-category  ,KEYWORD_OTHER_PRIVACY,Added category to record Article 9 member state order and Article 16 user notice submissions alleging privacy violations or own initiative actions taken against our Community Standards on privacy violations
+Category 5f,Not captured by any other sub-category  ,KEYWORD_OTHER_DATA_PROTECTION,Added category to record Article 9 member state order submissions alleging data protection violations and own initiative actions related to data protection.
+Category 6,Illegal or harmful speech,STATEMENT_CATEGORY_ILLEGAL_OR_HARMFUL_SPEECH,
+Category 6a,Defamation,KEYWORD_DEFAMATION,
+Category 6b,Discrimination,KEYWORD_DISCRIMINATION,
+Category 6c,Illegal incitement to violence and hatred based on protected characteristics (hate speech) ,KEYWORD_HATE_SPEECH,
+Category 6d,Not captured by any other sub-category  ,KEYWORD_OTHER_PROFANITY,Added category to capture own initiative actions taken against our Advertising Standards on profanity
+Category 6e,Not captured by any other sub-category  ,KEYWORD_OTHER_ILLEGALITY,Added category to record own initiative actions taken against likely locally illegal harmful speech.
+Category 7,Intellectual property infringements,STATEMENT_CATEGORY_INTELLECTUAL_PROPERTY_INFRINGEMENTS,
+Category 7a,Copyright infringements,KEYWORD_COPYRIGHT_INFRINGEMENT,
+Category 7b,Design infringements,KEYWORD_DESIGN_INFRINGEMENT,
+Category 7c,Geographical indications infringements,KEYWORD_GEOGRAPHIC_INDICATIONS_INFRINGEMENT,
+Category 7d,Patent infringements,KEYWORD_PATENT_INFRINGEMENT,
+Category 7e,Trade secret infringements,KEYWORD_TRADE_SECRET_INFRINGEMENT,
+Category 7f,Trademark infringements,KEYWORD_TRADEMARK_INFRINGEMENT,
+Category 7g,Not captured by any other sub-category ,KEYWORD_OTHER_INTELLECTUAL_PROPERTY_INFRINGEMENTS_THIRD_PARTY_VIOLATION_OR_DATA_VIOLATION,"Added category to capture Article 9 member state order submissions alleging intellectual property content violations, Article 10 member state order submissions alleging intellectual property or data violations, Article 16 notices alleging intellectual property violations, and instances where actions are taken against our Community Standards on third-party intellectual property"
+Category 8,Negative effects on civic discourse or elections,STATEMENT_CATEGORY_NEGATIVE_EFFECTS_ON_CIVIC_DISCOURSE_OR_ELECTIONS,
+Category 8a,"Misinformation, disinformation, foreign information manipulation and interference ",KEYWORD_MISINFORMATION_DISINFORMATION,
+Category 8b,Violation of EU law relevant to civic discourse or elections ,KEYWORD_VIOLATION_EU_LAW,"Instances where actions are taken in accordance to violating EU or national law, those are recorded with the reason for the violation and reported as such in this report."
+Category 8c,Violation of national law relevant to civic discourse or elections ,KEYWORD_VIOLATION_NATIONAL_LAW,"Instances where actions are taken in accordance to violating EU or national law, those are recorded with the reason for the violation and reported as such in this report."
+Category 8d,Not captured by any other sub-category  ,KEYWORD_OTHER_POLITICAL_ADVERTISING,"Added category to record Article 9 member state order submissions alleging political advertising content violations or own initiative actions taken against our Advertising Standards on ads about social issues, elections or politics"
+Category 8e,Not captured by any other sub-category  ,KEYWORD_OTHER_INELIGIBLE_USER,Added category to capture own initiative actions taken against our monetization rules for politicians and governments
+Category 8f,Not captured by any other sub-category  ,KEYWORD_OTHER_CIVIC_DISCOURSE,Added category to capture own initiative actions taken against our Content Monetization Policies on debated social issues
+Category 9,Protection of minors ,STATEMENT_CATEGORY_PROTECTION_OF_MINORS,
+Category 9a,Age-specific restrictions concerning minors,KEYWORD_AGE_SPECIFIC_RESTRICTIONS_MINORS,
+Category 9b,Child sexual abuse material,KEYWORD_CHILD_SEXUAL_ABUSE_MATERIAL,
+Category 9c,Child sexual abuse material containing deepfake or similar technology,KEYWORD_CHILD_SEXUAL_ABUSE_MATERIAL_DEEPFAKE,
+Category 9d,Grooming/sexual enticement of minors ,KEYWORD_GROOMING_SEXUAL_ENTICEMENT_MINORS,
+Category 9e,Unsafe challenges,KEYWORD_UNSAFE_CHALLENGES,
+Category 10,Risk for public security ,STATEMENT_CATEGORY_RISK_FOR_PUBLIC_SECURITY,
+Category 10a,Illegal organizations,KEYWORD_ILLEGAL_ORGANIZATIONS,
+Category 10b,Risk for environmental damage,KEYWORD_RISK_ENVIRONMENTAL_DAMAGE,
+Category 10c,Risk for public health,KEYWORD_RISK_PUBLIC_HEALTH,
+Category 10d,Terrorist content,KEYWORD_TERRORIST_CONTENT,
+Category 10e,Not captured by any other sub-category ,KEYWORD_OTHER_FUGITIVE,Added category to record Article 10 member state order submissions to provide information alleging a fugitive as the reason for the request.
+Category 10f,Not captured by any other sub-category ,KEYWORD_OTHER_TRESPASS_PROPERTY_AND_ENVIRONMENTAL_DAMAGE,Added category to record Article 10 member state order submissions to provide information alleging property or environmental damage as the reason for the request.
+Category 10g,Not captured by any other sub-category,KEYWORD_OTHER_PUBLIC_SECURITY,Added category to record own initiative actions taken against likely locally illegal public security risks.
+Category 11,Scams and/or fraud ,STATEMENT_CATEGORY_SCAMS_AND_FRAUD,
+Category 11a,Impersonation or account hijacking,KEYWORD_IMPERSONATION_ACCOUNT_HIJACKING,
+Category 11b,Inauthentic accounts,KEYWORD_INAUTHENTIC_ACCOUNTS,
+Category 11c,Inauthentic listings,KEYWORD_INAUTHENTIC_LISTINGS,
+Category 11d,Inauthentic user reviews,KEYWORD_INAUTHENTIC_USER_REVIEWS,
+Category 11e,Phishing,KEYWORD_PHISHING,
+Category 11f,Pyramid schemes,KEYWORD_PYRAMID_SCHEMES,
+Category 11g,Not captured by any other sub-category ,KEYWORD_OTHER_FINANCIAL_FRAUDS_SCAMS,Added category to record Article 10 member state order submissions to provide information alleging financial fraud and scams as the reason for the request.
+Category 11h,Not captured by any other sub-category ,KEYWORD_OTHER_FRAUD_AND_DECEPTION,"Added category to record Article 9 member state order and Article 16 user notice submissions alleging fraud or own initiative actions taken against our Community Standards on fraud, scams, and deceptive practices"
+Category 11i,Not captured by any other sub-category ,KEYWORD_OTHER_SPAM,Added category to record Article 9 member state order submissions alleging spam or own initiative actions taken against our Community Standards on spam
+Category 11j,Not captured by any other sub-category ,KEYWORD_OTHER_GAMBLING,Added category to capture likely violations of local gambling laws or own initiative actions taken against our Advertising Standards on online gambling and games
+Category 11k,Not captured by any other sub-category ,KEYWORD_OTHER_FAKE_ENGAGEMENT,Added category to capture own initiative actions taken against our Partner Monetization Policies on monetizing authentic engagement
+Category 12,Self-harm,STATEMENT_CATEGORY_SELF_HARM,
+Category 12a,Content promoting eating disorders,KEYWORD_CONTENT_PROMOTING_EATING_DISORDERS,
+Category 12b,Self-mutilation,KEYWORD_SELF_MUTILATION,
+Category 12c,Suicide,KEYWORD_SUICIDE,
+Category 13,"Unsafe, non-compliant or prohibited products ",STATEMENT_CATEGORY_UNSAFE_AND_PROHIBITED_PRODUCTS,
+Category 13a,Prohibited or restricted products,KEYWORD_PROHIBITED_PRODUCTS,"Category is inclusive of Article 9 member state orders, Article 10 data requests, Article 16 notices and own initiative actions related to drugs, firearms and other prohibited products."
+Category 13b,Unsafe or non-compliant products,KEYWORD_UNSAFE_PRODUCTS,
+Category 13c,Not captured by any other sub-category  ,KEYWORD_OTHER_GOODS_SERVICES_NOT_PERMITTED,"Added category to record Article 9 member state order submissions alleging unsafe substances, tobacco, alcohol, unsafe medical products, or unsafe financial services."
+Category 13d,Not captured by any other sub-category  ,KEYWORD_OTHER_STOLEN_GOODS,Added category to capture own initiative actions taken against our Commerce Policies on stolen goods
+Category 13e,Not captured by any other sub-category  ,KEYWORD_OTHER_VEHICLE_ACCESSORIES,Added category to capture own initiative actions taken against our Commerce Policies on vehicle parts and accessories
+Category 13f,Not captured by any other sub-category  ,KEYWORD_OTHER_NUDITY_SEXUAL_ACTIVITY,Added category to capture Article 9 member state order and Article 16 user notice submissions alleging nudity or sexual activity
+Category 14,Violence ,STATEMENT_CATEGORY_VIOLENCE,
+Category 14a,Coordinated harm,KEYWORD_COORDINATED_HARM,
+Category 14b,General calls or incitement to violence and/or hatred,KEYWORD_INCITEMENT_VIOLENCE_HATRED,Category is inclusive of Article 10 data requests alleging the threat of violence as the reason for the request.
+Category 14c,Human exploitation,KEYWORD_HUMAN_EXPLOITATION,
+Category 14d,Human trafficking,KEYWORD_HUMAN_TRAFFICKING,
+Category 14e,Trafficking in women and girls,KEYWORD_TRAFFICKING_WOMEN_GIRLS,
+Category 14f,Not captured by any other sub-category ,KEYWORD_OTHER_MURDER,Added category to record Article 10 member state order submissions to provide information alleging murder as the reason for the request.
+Category 14g,Not captured by any other sub-category ,KEYWORD_OTHER_KIDNAPPED_OR_MISSING_PERSON,Added category to record Article 10 member state order submissions to provide information alleging kidnapping or missing person as the reason for the request.
+Category 14h,Not captured by any other sub-category ,KEYWORD_OTHER_PHYSICAL_ASSAULT,Added category to record Article 10 member state order submissions to provide information alleging physical assault as the reason for the request.
+Category 14i,Not captured by any other sub-category ,KEYWORD_OTHER_SEX_CRIME_SEXUAL_ASSAULT,Added category to record Article 10 member state order submissions to provide information alleging a sex crime or sexual assault as the reason for the request.
+Category 14j,Not captured by any other sub-category ,KEYWORD_OTHER_GRAPHIC_VIOLENCE,Added category to record Article 9 member state order and Article 16 user notice submissions alleging graphic violence or own initiative actions taken against our Community Standards on violent and graphic content
+Category 14k,Not captured by any other sub-category ,KEYWORD_OTHER_THREATS_OF_VIOLENCE,Added category to record Article 10 member state order submissions alleging threats of violence.
+Category 15,Other violation of provider’s terms and conditions,STATEMENT_CATEGORY_OTHER_VIOLATION_TC,
+Category 15a,Adult sexual material,KEYWORD_ADULT_SEXUAL_MATERIAL,
+Category 15b,Age-specific restrictions,KEYWORD_AGE_SPECIFIC_RESTRICTIONS,
+Category 15c,Geographical requirements,KEYWORD_GEOGRAPHICAL_REQUIREMENTS,
+Category 15d,Goods/services not permitted to be offered on the platform,KEYWORD_GOODS_SERVICES_NOT_PERMITTED,
+Category 15e,Language requirements,KEYWORD_LANGUAGE_REQUIREMENTS,
+Category 15f,Nudity,KEYWORD_NUDITY,Our Community Standards cover both adult nudity and sexual activity. Actions against our community standards are recorded in the adult sexual material category
+Category 15g,Not captured by any other sub-category  ,KEYWORD_OTHER_HARMFUL_ACCOUNT,Added category to record Article 9 member state order submissions alleging harmful accounts or own initiative actions taken against our Community Standards on account integrity
+Category 15h,Not captured by any other sub-category  ,KEYWORD_OTHER_MEMORIALIZATION,Added category to capture own initiative actions taken against our Community Standards on memorialization
+Category 15i,Not captured by any other sub-category  ,KEYWORD_OTHER_META_BRAND,Added category to capture own initiative actions taken against our Advertising Standards on using Meta intellectual property and licenses
+Category 15j,Not captured by any other sub-category  ,KEYWORD_OTHER_MONETIZATION_VIOLATION,Added category to capture own initiative actions taken against our Content Monetization Policies or Partner Monetization Policies
+Category 15k,Not captured by any other sub-category  ,KEYWORD_OTHER_REPEAT_VIOLATOR,Added category to capture own initiative actions taken against accounts repeatedly in violation of our Community Standards
+Category 15l,Not captured by any other sub-category  ,KEYWORD_OTHER_UNORIGINAL_CONTENT,Added category to capture own initiative actions taken against our Partner Monetization Policies on sharing original content
+Category 15m,Not captured by any other sub-category  ,KEYWORD_OTHER_PAYMENT_TERMS,Added category to capture own initiative actions taken against our Partner Monetization Policies on payment terms
+Category 15n,Not captured by any other sub-category  ,KEYWORD_OTHER_UNKNOWN,Added category to capture instances where a definitive reason for actions against likely illegal content or users was not logged. We consistently work to identify the source of issues that may result in logging errors and correct them as soon as possible.
+Category 16,Type of illegal content not specified by the public authority,STATEMENT_CATEGORY_NOT_SPECIFIED_ORDER,
+Category 17,Type of alleged illegal content not specified by the notifier,STATEMENT_CATEGORY_NOT_SPECIFIED_NOTICE,
+Category 18,Other own initiative actions against likely illegal content or users,STATEMENT_CATEGORY_OTHER_ILLEGAL,"Added category to capture instances where a definitive reason for actions against terms and conditions violating content or users was not logged. We consistently work to identify the source of issues that may result in logging errors and correct them as soon as possible.
+"
