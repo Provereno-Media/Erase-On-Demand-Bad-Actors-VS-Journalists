@@ -1,7 +1,7 @@
 # Data Readiness Audit
 
 **Last updated:** 2026-09-25  
-**Scope:** `data/cases.csv` (35 rows) and `data/actors.csv` (29 rows)  
+**Scope:** `data/cases.csv` (33 rows) and `data/actors.csv` (29 rows)  
 **Purpose:** Track outstanding evidence gaps, verification priorities, and publication blockers for each case and actor record. Updated after each research sprint.
 
 ---
@@ -37,7 +37,7 @@ Each case row is assessed across five dimensions:
 | ARES-002 | ⚠️ Same as above | ⚠️ claimed_affiliation only | ✅ Videos removed, restored | ✅ Restored | ✅ SRC-001; SRC-002 | 🔍 Same as ARES-001 |
 | ARES-003 | ⚠️ Same as above | ⚠️ claimed_affiliation only | ✅ Photos removed | ❌ Outcome unknown | ✅ SRC-001 | ❌ Single source; appeal outcome unknown |
 
-**Cluster priority:** Obtain Ares Rights corporate registry record (Spain BORME or US state). Single-source status of ARES-003 does not block publication but limits confidence upgrade.
+**Cluster priority:** ✅ Ares Rights SL registry record obtained from BORME (2026-09-28). Remaining: fresh Registro Mercantil extract for current status. Single-source status of ARES-003 does not block publication but limits confidence upgrade.
 
 ---
 
@@ -160,7 +160,7 @@ Each case row is assessed across five dimensions:
 | ACT-001 | AiPlex Software Pvt Ltd | ✅ India MCA U72200KA2003PTC032145 | ⚠️ claimed_but_unconfirmed_by_platform | 🔍 Attach current Google TR reporter page snapshot; confirm no EU establishment (Article 22 DSA) |
 | ACT-002 | MarkScan Digital IP | ❌ No registration record | ❌ unknown | 🔍 Search India MCA for marcscan.in registrant; confirm or rule out AiPlex subsidiary relationship |
 | ACT-003 | Eliminalia S.L. | ✅ Spain BORME B67704901 | ❌ unknown | ⚠️ Confirm current registration status (company may have been wound down post-2023 exposure) |
-| ACT-004 | Ares Rights | ❌ Spain BORME record not obtained | ❌ unknown | ❌ HIGH: obtain primary registry entry |
+| ACT-004 | Ares Rights SL | ✅ BORME primary: RM Barcelona hoja B-321497 (2010, 2012, 2013 notices); CIF B64106016 secondary only | ❌ unknown | ⚠️ LOW: fresh official extract for current status (2026-09-28) |
 | ACT-005 | Initiatrix Technologies | ❌ India MCA record not confirmed | ❌ unknown | ❌ HIGH: search MCA for exact company name |
 | ACT-006 | Mogul Press | ❌ US state of incorporation unknown | ❌ unknown | 🔍 Search Delaware / Wyoming / Nevada SOS for Mogul Press |
 | ACT-007 | Bytescare | ❌ India MCA record not confirmed | ❌ unknown | 🔍 Search India MCA |

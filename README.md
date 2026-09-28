@@ -114,3 +114,13 @@ is maintained separately by the research team.
 
 See `CONTRIBUTING.md` for how to propose a case, submit evidence, or report a
 correction.
+
+## Known Limitations (v1.0.0)
+
+- 33 cases: 32 `Confirmed`, 1 `Unverified` (AIPLEX-001, single source).
+- MON-001, GAYLAN-001 and RESP-001 rely on a limited number of independent sources; see `docs/data-readiness-audit.md`.
+- SRC-031, SRC-032 and SRC-035 (Meta notices naming AiPlex) await public archival links.
+- Corporate registry records not yet obtained for Ares Rights, Initiatrix Technologies, Bytescare, Mogul Press and MarkScan; a MarkScan–AiPlex corporate link is not established.
+- Vendor attribution is reported as coded in `vendor_attribution`; it is not a legal finding.
+
+Run `python3 scripts/validate.py` to check dataset integrity.
