@@ -1,7 +1,8 @@
 name: pages
-# Pages is not enabled yet. After enabling (Settings > Pages > Source: GitHub Actions),
-# add a push trigger: push: {branches: [main], paths: ["site/**", "data/**"]}
 on:
+  push:
+    branches: [main]
+    paths: ["site/**", "data/**", ".github/workflows/pages.yml"]
   workflow_dispatch:
 permissions:
   contents: read
