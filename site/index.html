@@ -4,111 +4,82 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Erase on Demand — Dataset</title>
-<meta name="description" content="Documented cases of copyright and notice-and-takedown abuse against journalists and media.">
+<meta name="description" content="Documented cases of copyright and notice-and-takedown abuse against journalists, media and civil society.">
 <style>
-:root{--bg:#fff;--fg:#1a1a1a;--mute:#6b6b6b;--line:#e5e5e5;--acc:#1f4e79;--soft:#eef3f8}
+:root{--bg:#fff;--fg:#182431;--mute:#526170;--line:#dbe2e9;--acc:#17527c;--soft:#f3f7fa;--focus:#be6a10}
 *{box-sizing:border-box}
-body{margin:0;font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--fg);background:var(--bg)}
-main{max-width:1040px;margin:0 auto;padding:48px 20px 80px}
-h1{font-size:28px;margin:0 0 8px}
-h2{font-size:18px;margin:48px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line)}
-p.lead{color:var(--mute);max-width:680px;margin:0}
-a{color:var(--acc)}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:32px}
-.stat{border:1px solid var(--line);border-radius:6px;padding:16px}
-.stat b{display:block;font-size:28px;font-variant-numeric:tabular-nums}
-.stat span{color:var(--mute);font-size:14px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px}
-.chart h3{font-size:14px;font-weight:600;margin:0 0 10px}
-.row{display:grid;grid-template-columns:200px 1fr 28px;gap:8px;align-items:center;font-size:13px;margin:4px 0}
-.row .l{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.row .b{height:14px;background:var(--acc);border-radius:2px}
-.row .n{text-align:right;font-variant-numeric:tabular-nums;color:var(--mute)}
-.years{display:flex;align-items:flex-end;gap:6px;height:140px;border-bottom:1px solid var(--line)}
-.years div{flex:1;background:var(--acc);border-radius:2px 2px 0 0;position:relative;min-height:2px}
-.years div span{position:absolute;top:-18px;width:100%;text-align:center;font-size:12px;color:var(--mute)}
-.ylab{display:flex;gap:6px;font-size:11px;color:var(--mute)}.ylab span{flex:1;text-align:center}
-.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
-select,input{font:inherit;font-size:14px;padding:6px 8px;border:1px solid var(--line);border-radius:4px;background:#fff}
-input{flex:1;min-width:180px}
-table{width:100%;border-collapse:collapse;font-size:14px}
-th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
-th{font-size:12px;color:var(--mute);font-weight:600;text-transform:uppercase;letter-spacing:.03em}
-tbody tr{cursor:pointer}tbody tr:hover{background:var(--soft)}
-tr.detail{cursor:default}tr.detail td{background:var(--soft);font-size:13px;color:#333}
-.tag{display:inline-block;font-size:12px;padding:1px 6px;border-radius:3px;background:var(--soft);margin:1px 2px 1px 0}
-.unv{background:#fff4d6}
-.tw{overflow-x:auto}
-footer{margin-top:64px;color:var(--mute);font-size:13px;border-top:1px solid var(--line);padding-top:16px}
+html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--fg);background:var(--bg)}
+.container{max-width:1100px;margin:auto;padding:0 24px}
+a{color:var(--acc);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}
+button,select,input{font:inherit}:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.skip{position:absolute;top:-100px;left:16px;background:#fff;padding:10px;z-index:10}.skip:focus{top:12px}
+.site-head{border-bottom:1px solid var(--line)}.site-head .container{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:64px}
+.brand{font-weight:750;letter-spacing:-.02em;text-decoration:none;color:var(--fg)}nav{display:flex;gap:20px;font-size:14px}
+.hero{padding:64px 0 36px}.eyebrow{text-transform:uppercase;font-size:12px;letter-spacing:.12em;font-weight:750;color:var(--acc);margin:0 0 14px}
+h1{font-size:clamp(34px,5vw,54px);line-height:1.1;letter-spacing:-.035em;margin:0 0 18px}.lead{max-width:730px;font-size:clamp(17px,2vw,20px);color:var(--mute);margin:0 0 18px}
+.context{max-width:760px;font-size:14px;color:var(--mute);margin:0}main{padding-bottom:80px}section{margin-top:58px}h2{font-size:25px;line-height:1.2;letter-spacing:-.02em;margin:0 0 9px}
+.section-intro{color:var(--mute);margin:0 0 22px;max-width:750px;font-size:14px}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:30px}
+.stat{border:1px solid var(--line);border-radius:8px;padding:16px 18px;min-height:91px}.stat b{display:block;font-size:27px;line-height:1.2;font-variant-numeric:tabular-nums}.stat span{display:block;color:var(--mute);font-size:13px;margin-top:5px}
+.project-note{margin-top:22px;padding:20px 24px;border-left:3px solid var(--acc);background:var(--soft);max-width:900px}.project-note h2{font-size:16px;line-height:1.35;margin:0 0 8px;letter-spacing:0}.project-note p{margin:0;max-width:820px;font-size:14px;line-height:1.6}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 12px}.filter{display:flex;flex-direction:column;gap:4px;font-size:12px;font-weight:650;color:var(--mute)}.filter.search{flex:2 1 260px}.filter:not(.search){flex:1 1 155px}
+select,input{min-height:41px;padding:8px 11px;border:1px solid #aebac5;border-radius:6px;background:#fff;color:var(--fg);font-size:14px;width:100%}.count{color:var(--mute);font-size:13px;margin:12px 0}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:8px}table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;color:var(--mute);font-weight:750;text-transform:uppercase;letter-spacing:.06em;background:var(--soft);white-space:nowrap}tbody tr:last-child td{border-bottom:0}.case-row:hover{background:#f9fbfc}.target{font-weight:650;min-width:160px}.muted{color:var(--mute)}
+.tag{display:inline-block;font-size:12px;line-height:1.35;padding:3px 7px;border:1px solid #cddce8;border-radius:4px;background:#eaf3f9;margin:0 3px 3px 0}.conf-confirmed{background:#e8f4ec;border-color:#a9cfb7;color:#234b31}.conf-unverified{background:#fff3dc;border-color:#e7c98a;color:#654410}.conf-plausible{background:#f2eefb;border-color:#ccc0e9;color:#493779}
+.details-button{border:1px solid #afc4d4;border-radius:5px;background:#fff;color:var(--acc);padding:5px 9px;cursor:pointer;white-space:nowrap;font-size:13px}.details-button:hover{background:var(--soft)}.detail td{background:var(--soft);padding:20px 22px}
+.detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 30px;max-width:950px}.detail-grid h3{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute);margin:0 0 5px}.detail-grid p{margin:0 0 6px;font-size:14px;overflow-wrap:anywhere}.detail-grid .wide{grid-column:1/-1}.detail-grid a{overflow-wrap:anywhere}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 48px}.chart h3{font-size:15px;margin:0 0 13px}.row{display:grid;grid-template-columns:minmax(120px,190px) minmax(40px,1fr) 35px;gap:9px;align-items:center;font-size:13px;margin:8px 0}
+.row .l{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.row .track{height:13px;background:#edf2f5;border-radius:3px;overflow:hidden}.row .b{height:100%;background:var(--acc);border-radius:3px}.row .n{text-align:right;font-variant-numeric:tabular-nums;color:var(--mute)}
+.years{display:flex;align-items:flex-end;gap:5px;height:155px;border-bottom:1px solid var(--line);margin-top:26px}.years .year-bar{flex:1;max-width:90px;background:var(--acc);border-radius:3px 3px 0 0;position:relative;min-height:0}.years .year-bar span{position:absolute;top:-21px;left:0;width:100%;text-align:center;font-size:12px;color:var(--mute)}
+.ylab{display:flex;gap:5px;font-size:11px;color:var(--mute)}.ylab span{flex:1;max-width:90px;text-align:center}.secondary{margin-top:30px}.notice{background:var(--soft);border-left:3px solid var(--acc);padding:15px 18px;font-size:14px;max-width:790px}
+footer{margin-top:65px;color:var(--mute);font-size:13px;border-top:1px solid var(--line);padding-top:21px;line-height:1.8}.status{padding:18px;border:1px solid var(--line);border-radius:6px;color:var(--mute)}
+@media(max-width:750px){.hero{padding-top:42px}.stats{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.table-action,.table-country,.table-id{display:none}.detail-grid{grid-template-columns:1fr}.detail-grid .wide{grid-column:auto}.detail td{padding:15px}.row{grid-template-columns:minmax(90px,150px) minmax(40px,1fr) 30px}}
+@media(max-width:520px){.container{padding:0 16px}.site-head .container{align-items:flex-start;flex-direction:column;gap:4px;padding-top:13px;padding-bottom:12px}nav{gap:14px}.hero{padding-top:35px}.stats{gap:8px}.stat{padding:12px}.stat b{font-size:23px}.project-note{padding:16px;margin-top:12px}.table-date{display:none}th,td{padding:10px 7px}.target{min-width:115px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<main>
-<h1>Erase on Demand</h1>
-<p class="lead">Documented cases in which copyright and notice-and-takedown systems of online platforms were used against journalists, media and civil society. Dataset by <a href="https://provereno.media">Provereno Media</a>.</p>
-
-<div class="stats" id="stats"></div>
-
-<h2>Cases over time</h2>
-<div id="years"></div>
-
-<h2>Breakdown</h2>
-<div class="grid">
- <div class="chart"><h3>Abuse mechanism</h3><div id="c-mech"></div></div>
- <div class="chart"><h3>Motive</h3><div id="c-motive"></div></div>
- <div class="chart"><h3>Platform</h3><div id="c-platform"></div></div>
- <div class="chart"><h3>Target country</h3><div id="c-country"></div></div>
-</div>
-
-<h2>Cases</h2>
-<div class="filters">
- <input id="q" type="search" placeholder="Search target, claimant, summary">
- <select id="f-platform"></select>
- <select id="f-country"></select>
- <select id="f-conf"></select>
-</div>
-<div class="tw"><table>
- <thead><tr><th>ID</th><th>Target</th><th>Country</th><th>Platform</th><th>Start</th><th>Mechanism</th><th>Confidence</th></tr></thead>
- <tbody id="tb"></tbody>
-</table></div>
-<p id="count" style="color:var(--mute);font-size:13px"></p>
-
-<footer>
-Data: <a href="https://github.com/Provereno-Media/Erase-On-Demand-Bad-Actors-VS-Journalists">GitHub repository</a> ·
-<a href="data/cases.csv">cases.csv</a> · <a href="data/actors.csv">actors.csv</a> · <a href="data/sources.csv">sources.csv</a> ·
-Methodology: <a href="https://github.com/Provereno-Media/Erase-On-Demand-Bad-Actors-VS-Journalists/blob/main/docs/methodology.md">methodology.md</a>, <a href="https://github.com/Provereno-Media/Erase-On-Demand-Bad-Actors-VS-Journalists/blob/main/docs/codebook.md">codebook.md</a>.<br>
-Vendor attribution reflects the coded evidence level and is not a legal finding. Data CC BY 4.0.
-</footer>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="container"><a class="brand" href="#top">Erase on Demand</a><nav aria-label="Main navigation"><a href="#cases">Cases</a><a href="#patterns">Patterns</a><a href="#about">About the data</a></nav></div></header>
+<main id="main" class="container">
+<div class="hero" id="top"><p class="eyebrow">An open research dataset · Provereno Media</p><h1>Erase on Demand</h1>
+<p class="lead">Documented cases in which copyright and notice-and-takedown systems of online platforms were used against journalists, media and civil society.</p>
+<p class="context">Explore platform-level episodes, examine their sources and see how each case was classified. An entry in the dataset is not, by itself, a legal finding. <a href="#about">How to read this dataset</a></p>
+<div class="stats" id="stats" aria-live="polite"><p class="status">Loading dataset…</p></div></div>
+<aside class="project-note" aria-labelledby="project-note-title"><h2 id="project-note-title">About this research</h2><p>The central object of analysis is not individual vendors but the structural failure of platform enforcement systems: privileged "trusted" reporting channels, automated takedown pipelines that operate without content verification, and the absence of effective oversight under the EU Digital Services Act (DSA). The project is developed by Provereno Media under the <a href="https://efcsn.com/funding-opportunities/winners-tech-accountability-grants/">Tech Accountability Grants program</a> by the European Fact-Checking Standards Network.</p></aside>
+<section id="cases" aria-labelledby="cases-title"><h2 id="cases-title">Explore cases</h2><p class="section-intro">Search for an outlet, claimant or case ID. Open a record for its platform action, assessment and source references.</p>
+<div class="filters"><label class="filter search" for="q">Search<input id="q" type="search" placeholder="Target, claimant, summary or case ID"></label><label class="filter" for="f-platform">Platform<select id="f-platform"><option value="">All platforms</option></select></label><label class="filter" for="f-country">Target country<select id="f-country"><option value="">All countries</option></select></label><label class="filter" for="f-conf">Confidence<select id="f-conf"><option value="">All confidence levels</option></select></label></div>
+<p class="count" id="count" role="status" aria-live="polite"></p><div class="tw"><table><thead><tr><th class="table-id" scope="col">ID</th><th scope="col">Target</th><th class="table-country" scope="col">Country</th><th scope="col">Platform</th><th class="table-action" scope="col">Action</th><th class="table-date" scope="col">Start</th><th scope="col">Confidence</th><th scope="col">Details</th></tr></thead><tbody id="tb"></tbody></table></div></section>
+<section id="patterns" aria-labelledby="patterns-title"><h2 id="patterns-title">Patterns in the data</h2><p class="section-intro">Counts describe records in this dataset, not the total number of complaints submitted to platforms. A case may belong to more than one category, so category totals can exceed the number of cases.</p>
+<div class="grid"><div class="chart"><h3>Abuse mechanism</h3><div id="c-mech"></div></div><div class="chart"><h3>Platform</h3><div id="c-platform"></div></div><div class="chart"><h3>Motive</h3><div id="c-motive"></div></div><div class="chart"><h3>Target country</h3><div id="c-country"></div></div></div>
+<div class="secondary"><h3>Cases over time</h3><p class="section-intro">Records grouped by the year of their recorded start date; undated records are excluded from this chart.</p><div id="years"></div></div></section>
+<section id="about" aria-labelledby="about-title"><h2 id="about-title">About the data</h2><p class="section-intro">Each case is a coded platform-level episode. Related episodes may share a campaign ID. Confidence describes the evidence level assigned to a case; claimant naming and vendor attribution should be read separately from the established platform action.</p><p class="notice">Confirmed, Unverified and Plausible are dataset classifications, not judicial findings. For inclusion rules, definitions and limitations, consult the <a href="https://github.com/paulpogoda/Erase-On-Demand-Bad-Actors-VS-Journalists/blob/main/docs/methodology.md">methodology</a> and <a href="https://github.com/paulpogoda/Erase-On-Demand-Bad-Actors-VS-Journalists/blob/main/docs/codebook.md">codebook</a>.</p></section>
+<footer>Data: <a href="https://github.com/paulpogoda/Erase-On-Demand-Bad-Actors-VS-Journalists">GitHub repository</a> · <a href="data/cases.csv">cases.csv</a> · <a href="data/actors.csv">actors.csv</a> · <a href="data/sources.csv">sources.csv</a>.<br>Dataset by <a href="https://provereno.media">Provereno Media</a>. Vendor attribution reflects the coded evidence level and is not a legal finding. Data CC BY 4.0.</footer>
 </main>
 <script>
-function parseCSV(t){const R=[];let r=[],f='',q=false;for(let i=0;i<t.length;i++){const c=t[i];if(q){if(c=='"'){if(t[i+1]=='"'){f+='"';i++}else q=false}else f+=c}else if(c=='"')q=true;else if(c==','){r.push(f);f=''}else if(c=='\n'||c=='\r'){if(c=='\r'&&t[i+1]=='\n')i++;r.push(f);f='';if(r.length>1||r[0])R.push(r);r=[]}else f+=c}if(f||r.length){r.push(f);R.push(r)}const h=R.shift();return R.map(x=>Object.fromEntries(h.map((k,i)=>[k,x[i]||''])))}
-const split=v=>v.split(/[;|,]\s*/).map(s=>s.trim()).filter(Boolean);
-const human=s=>s.replace(/_/g,' ');
-const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-function count(rows,key){const m={};rows.forEach(r=>split(r[key]).forEach(v=>m[v]=(m[v]||0)+1));return Object.entries(m).sort((a,b)=>b[1]-a[1])}
-function bars(el,data){const max=Math.max(...data.map(d=>d[1]));document.getElementById(el).innerHTML=data.map(([k,n])=>`<div class="row"><span class="l" title="${esc(human(k))}">${esc(human(k))}</span><div class="b" style="width:${n/max*100}%"></div><span class="n">${n}</span></div>`).join('')}
-Promise.all(['cases','actors','sources'].map(n=>fetch(`data/${n}.csv`).then(r=>r.text()).then(parseCSV))).then(([cases,actors,sources])=>{
- const camps=new Set(cases.map(c=>c.campaign_id)),countries=new Set(cases.map(c=>c.target_country));
- const conf=cases.filter(c=>c.confidence=='Confirmed').length;
- const vendors=actors.filter(a=>a.actor_role=='vendor').length;
- document.getElementById('stats').innerHTML=[[cases.length,'cases'],[camps.size,'campaigns'],[countries.size,'target countries'],[vendors,'vendors / filers'],[sources.length,'sources'],[conf+' / '+cases.length,'confirmed']].map(([b,s])=>`<div class="stat"><b>${b}</b><span>${s}</span></div>`).join('');
- const ys={};cases.forEach(c=>{const y=c.date_start.slice(0,4);if(y)ys[y]=(ys[y]||0)+1});
- const y0=Math.min(...Object.keys(ys)),y1=Math.max(...Object.keys(ys)),yr=[];for(let y=y0;y<=y1;y++)yr.push([y,ys[y]||0]);
- const ym=Math.max(...yr.map(x=>x[1]));
- document.getElementById('years').innerHTML=`<div class="years">${yr.map(([y,n])=>`<div style="height:${n/ym*100}%">${n?`<span>${n}</span>`:''}</div>`).join('')}</div><div class="ylab">${yr.map(([y])=>`<span>${String(y).slice(2)}</span>`).join('')}</div>`;
- bars('c-mech',count(cases,'abuse_mechanism'));bars('c-motive',count(cases,'motive_category'));bars('c-platform',count(cases,'platform'));bars('c-country',count(cases,'target_country'));
- const opts=(id,label,key)=>{document.getElementById(id).innerHTML=`<option value="">${label}: all</option>`+count(cases,key).map(([k])=>`<option value="${esc(k)}">${esc(human(k))}</option>`).join('')};
- opts('f-platform','Platform','platform');opts('f-country','Country','target_country');opts('f-conf','Confidence','confidence');
- const tb=document.getElementById('tb');
- function render(){const q=document.getElementById('q').value.toLowerCase(),fp=document.getElementById('f-platform').value,fc=document.getElementById('f-country').value,ff=document.getElementById('f-conf').value;
-  const rows=cases.filter(c=>(!fp||split(c.platform).includes(fp))&&(!fc||c.target_country==fc)&&(!ff||c.confidence==ff)&&(!q||(c.target_name+c.claimant_name_as_reported+c.summary+c.case_id).toLowerCase().includes(q)));
-  tb.innerHTML=rows.map(c=>`<tr data-id="${esc(c.case_id)}"><td>${esc(c.case_id)}</td><td>${esc(c.target_name)}</td><td>${esc(c.target_country)}</td><td>${split(c.platform).map(p=>`<span class="tag">${esc(human(p))}</span>`).join('')}</td><td>${esc(c.date_start)}</td><td>${split(c.abuse_mechanism).map(p=>`<span class="tag">${esc(human(p))}</span>`).join('')}</td><td><span class="tag ${c.confidence!='Confirmed'?'unv':''}">${esc(c.confidence)}</span></td></tr>`).join('');
-  document.getElementById('count').textContent=`${rows.length} of ${cases.length} cases shown. Click a row for details.`}
- tb.addEventListener('click',e=>{const tr=e.target.closest('tr[data-id]');if(!tr)return;const n=tr.nextElementSibling;if(n&&n.classList.contains('detail')){n.remove();return}
-  const c=cases.find(x=>x.case_id==tr.dataset.id);const d=document.createElement('tr');d.className='detail';
-  d.innerHTML=`<td colspan="7"><p style="margin:0 0 8px">${esc(c.summary)}</p><b>Claimant:</b> ${esc(c.claimant_name_as_reported||'—')} · <b>Vendor attribution:</b> ${esc(human(c.vendor_attribution||'—'))} · <b>Motive:</b> ${esc(human(c.motive_category))}<br><b>Platform action:</b> ${esc(human(c.platform_action))} · <b>Appeal:</b> ${esc(human(c.appeal_outcome||'—'))} · <b>Failed control:</b> ${esc(human(c.failed_control||'—'))}<br><b>DSA articles:</b> ${esc(c.dsa_articles_implicated||'—')} · <b>Campaign:</b> ${esc(c.campaign_id)} · <b>Sources:</b> ${esc(c.source_ids)} · <b>Last verified:</b> ${esc(c.last_verified)}</td>`;tr.after(d)});
- ['q','f-platform','f-country','f-conf'].forEach(id=>document.getElementById(id).addEventListener('input',render));render();
-}).catch(e=>{document.getElementById('stats').textContent='Failed to load data: '+e});
+function parseCSV(t){const R=[];let r=[],f='',q=false;for(let i=0;i<t.length;i++){const c=t[i];if(q){if(c=='"'){if(t[i+1]=='"'){f+='"';i++}else q=false}else f+=c}else if(c=='"')q=true;else if(c==','){r.push(f);f=''}else if(c=='\n'||c=='\r'){if(c=='\r'&&t[i+1]=='\n')i++;r.push(f);f='';if(r.length>1||r[0])R.push(r);r=[]}else f+=c}if(f||r.length){r.push(f);R.push(r)}const h=R.shift();return h?R.map(x=>Object.fromEntries(h.map((k,i)=>[k,x[i]||'']))):[]}
+const split=v=>String(v||'').split(/[;|,]\s*/).map(s=>s.trim()).filter(Boolean);
+const human=s=>String(s||'').replace(/_/g,' ');
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const element=id=>document.getElementById(id);
+const uniqueValues=(rows,key)=>[...new Set(rows.flatMap(r=>split(r[key])))].sort((a,b)=>a.localeCompare(b));
+function count(rows,key){const m=new Map();rows.forEach(r=>split(r[key]).forEach(v=>m.set(v,(m.get(v)||0)+1)));return [...m].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]))}
+function bars(id,data){if(!data.length){element(id).textContent='No data available.';return}const max=Math.max(...data.map(d=>d[1]));element(id).innerHTML=data.map(([k,n])=>`<div class="row"><span class="l" title="${esc(human(k))}">${esc(human(k))}</span><div class="track" aria-hidden="true"><div class="b" style="width:${n/max*100}%"></div></div><span class="n" aria-label="${n} cases">${n}</span></div>`).join('')}
+function validURL(raw){try{const u=new URL(raw);return ['https:','http:'].includes(u.protocol)?u.href:null}catch{return null}}
+function sourceList(ids,sources){const index=new Map(sources.map(s=>[String(s.source_id||'').trim(),s]));const keys=split(ids);if(!keys.length)return 'Not listed in the public source register.';return keys.map(id=>{const s=index.get(id);if(!s)return `<span title="Source not found in the public register">${esc(id)} (not found)</span>`;const label=esc(s.title||id);const url=validURL(s.url)||validURL(s.archive_url);return url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${label}</a>`:`<span>${label} (${esc(id)}; public link unavailable; evidence reference held privately)</span>`}).join(' · ')}
+async function getCSV(name){const r=await fetch(`data/${name}.csv`);if(!r.ok)throw new Error(`${name}.csv: HTTP ${r.status}`);return parseCSV(await r.text())}
+Promise.all(['cases','actors','sources'].map(getCSV)).then(([cases,actors,sources])=>{
+ const camps=new Set(cases.map(c=>c.campaign_id).filter(Boolean));const platforms=new Set(cases.flatMap(c=>split(c.platform)));const dates=cases.map(c=>c.last_verified).filter(v=>/^\d{4}-\d{2}-\d{2}$/.test(v)).sort();
+ const stats=[[cases.length,'cases'],[camps.size,'campaigns'],[platforms.size,'platforms'],[dates.at(-1)||'—','latest case verification']];element('stats').innerHTML=stats.map(([value,label])=>`<div class="stat"><b>${esc(value)}</b><span>${esc(label)}</span></div>`).join('');
+ bars('c-mech',count(cases,'abuse_mechanism'));bars('c-platform',count(cases,'platform'));bars('c-motive',count(cases,'motive_category'));bars('c-country',count(cases,'target_country'));
+ const ys={};cases.forEach(c=>{const m=/^(\d{4})/.exec(c.date_start||'');if(m){const y=Number(m[1]);if(y>=1900&&y<=2100)ys[y]=(ys[y]||0)+1}});const years=Object.keys(ys).map(Number);if(years.length){const y0=Math.min(...years),y1=Math.max(...years),yr=[];for(let y=y0;y<=y1;y++)yr.push([y,ys[y]||0]);const max=Math.max(...yr.map(x=>x[1]));element('years').innerHTML=`<div class="years" aria-hidden="true">${yr.map(([y,n])=>`<div class="year-bar" style="height:${n?n/max*100:0}%">${n?`<span>${n}</span>`:''}</div>`).join('')}</div><div class="ylab" aria-hidden="true">${yr.map(([y])=>`<span>${y}</span>`).join('')}</div><p class="section-intro">${yr.map(([y,n])=>`${y}: ${n}`).join(' · ')}</p>`}else element('years').textContent='No dated cases available.';
+ const opts=(id,label,key)=>{element(id).innerHTML=`<option value="">All ${label}</option>`+uniqueValues(cases,key).map(k=>`<option value="${esc(k)}">${esc(human(k))}</option>`).join('')};opts('f-platform','platforms','platform');opts('f-country','countries','target_country');opts('f-conf','confidence levels','confidence');
+ const tb=element('tb');let shown=[];function render(){const query=element('q').value.trim().toLocaleLowerCase(),fp=element('f-platform').value,fc=element('f-country').value,ff=element('f-conf').value;shown=cases.filter(c=>(!fp||split(c.platform).includes(fp))&&(!fc||split(c.target_country).includes(fc))&&(!ff||split(c.confidence).includes(ff))&&(!query||[c.target_name,c.claimant_name_as_reported,c.summary,c.case_id].join(' ').toLocaleLowerCase().includes(query)));
+ tb.replaceChildren();shown.forEach((c,i)=>{const row=document.createElement('tr');row.className='case-row';const id=`case-detail-${i}`;const confidence=String(c.confidence||'').toLowerCase();const cls=['confirmed','unverified','plausible'].includes(confidence)?`conf-${confidence}`:'';row.innerHTML=`<td class="table-id muted">${esc(c.case_id)}</td><td class="target">${esc(c.target_name||'—')}</td><td class="table-country">${esc(human(c.target_country||'—'))}</td><td>${split(c.platform).map(p=>`<span class="tag">${esc(human(p))}</span>`).join('')||'—'}</td><td class="table-action">${esc(human(c.platform_action||'—'))}</td><td class="table-date">${esc(c.date_start||'—')}</td><td><span class="tag ${cls}">${esc(c.confidence||'—')}</span></td><td><button class="details-button" type="button" aria-expanded="false" aria-controls="${id}" data-case="${i}" aria-label="View details for ${esc(c.target_name||c.case_id||'case')}">View</button></td>`;tb.append(row)});if(!shown.length){const row=document.createElement('tr');row.innerHTML='<td colspan="8">No cases match these filters.</td>';tb.append(row)}element('count').textContent=`${shown.length} of ${cases.length} cases shown.`}
+ tb.addEventListener('click',e=>{const btn=e.target.closest('button[data-case]');if(!btn)return;const row=btn.closest('tr');if(btn.getAttribute('aria-expanded')==='true'){row.nextElementSibling?.remove();btn.setAttribute('aria-expanded','false');btn.textContent='View';return}tb.querySelectorAll('button[aria-expanded="true"]').forEach(other=>{other.closest('tr').nextElementSibling?.remove();other.setAttribute('aria-expanded','false');other.textContent='View'});
+ const c=shown[Number(btn.dataset.case)];if(!c)return;const detail=document.createElement('tr');detail.className='detail';detail.id=btn.getAttribute('aria-controls');detail.innerHTML=`<td colspan="8"><div class="detail-grid"><div class="wide"><h3>What happened</h3><p>${esc(c.summary||'No public summary available.')}</p></div><div><h3>Platform response</h3><p><b>Action:</b> ${esc(human(c.platform_action||'—'))}<br><b>Appeal:</b> ${esc(human(c.appeal_outcome||'—'))}</p></div><div><h3>Assessment</h3><p><b>Mechanism:</b> ${esc(split(c.abuse_mechanism).map(human).join(', ')||'—')}<br><b>Motive:</b> ${esc(human(c.motive_category||'—'))}<br><b>Failed control:</b> ${esc(human(c.failed_control||'—'))}</p></div><div><h3>Claimant and attribution</h3><p><b>Claimant as reported:</b> ${esc(c.claimant_name_as_reported||'—')}<br><b>Vendor attribution:</b> ${esc(human(c.vendor_attribution||'—'))}</p></div><div><h3>Record information</h3><p><b>Case:</b> ${esc(c.case_id||'—')}<br><b>Campaign:</b> ${esc(c.campaign_id||'—')}<br><b>DSA articles coded:</b> ${esc(c.dsa_articles_implicated||'—')}<br><b>Last verified:</b> ${esc(c.last_verified||'—')}</p></div><div class="wide"><h3>Sources</h3><p>${sourceList(c.source_ids,sources)}</p></div></div></td>`;row.after(detail);btn.setAttribute('aria-expanded','true');btn.textContent='Close'});['q','f-platform','f-country','f-conf'].forEach(id=>element(id).addEventListener('input',render));render();
+}).catch(e=>{element('stats').innerHTML=`<p class="status">Failed to load data: ${esc(e.message)}. Open this page through a web server or the published site, not directly as a local file.</p>`;element('count').textContent='Dataset unavailable.'});
 </script>
 </body>
 </html>
