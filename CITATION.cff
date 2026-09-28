@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "Erase on Demand: Bad Actors vs Journalists"
+version: 1.0.0
+date-released: 2026-10-03
+license: CC-BY-4.0
+authors:
+  - name: "Provereno Media"
+repository-code: "https://github.com/Provereno-Media/Erase-On-Demand-Bad-Actors-VS-Journalists"
