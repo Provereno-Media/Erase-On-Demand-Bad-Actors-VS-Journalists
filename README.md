@@ -5,6 +5,10 @@ and notice-and-takedown systems used to silence independent media, journalists'
 organizations, and civil society groups. The project is developed by Provereno
 Media under the [Tech Accountability Grants program](https://efcsn.com/funding-opportunities/winners-tech-accountability-grants/) by the European Fact-Checking Standards Network.
 
+## Interactive Dataset
+
+[The interactive auto-updated dataset is available as a GitHub Page](https://provereno-media.github.io/Erase-On-Demand-Bad-Actors-VS-Journalists/)
+
 ## What this project studies
 
 The central object of analysis is not individual vendors (AiPlex, MarkScan,
