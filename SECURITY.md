@@ -8,7 +8,7 @@ The **Erase on Demand** project documents abuse of copyright and platform enforc
 
 If you discover a security vulnerability in our repository scripts, data pipelines, or automated infrastructure, please notify us directly rather than opening a public issue.
 
-- **Email**: `security@provereno.media`
+- **Email**: `info@provereno.media` OR `pogoda@provereno.media`
 - **PGP Fingerprint**: Available on keyservers or upon request.
 - **Response Timeline**: We acknowledge receipt of vulnerability reports within 48 hours and provide remediation updates within 7 days.
 
