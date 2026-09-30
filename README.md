@@ -138,6 +138,7 @@ correction.
 - AiPlex attribution for `LMC-002` and `LMC-003` is inferred from timing (`SRC-033`, `SRC-034`); no primary Meta notice was obtained.
 - `SRC-038` and `SRC-039` have no archive link or publication date, and many `archive_url` values are Wayback search patterns rather than specific snapshots.
 - Corporate registry records not yet obtained for Ares Rights, Initiatrix Technologies, Bytescare, Mogul Press and MarkScan; a MarkScan–AiPlex corporate link is not established.
+- In episodes involving AiPlex and MarkScan, the sources document removals based on unfounded or unverified notices, but the vendor named in a notice is not conclusive proof of who actually filed it. In the Respublika.kz.media episodes `RESP-004` and `RESP-005`, notices naming AiPlex as claimant also contained a MarkScan domain address; the notices are held in the closed evidence vault and are not publicly archived (`SRC-031`, `SRC-032`). This research does not investigate the activities of these companies: its subject is the platform rules and mechanisms that both named and anonymous bad-faith claimants can exploit.
 - Vendor attribution is reported as coded in `vendor_attribution`; it is not a legal finding.
 
 Run `python3 scripts/validate.py` to check dataset integrity.
