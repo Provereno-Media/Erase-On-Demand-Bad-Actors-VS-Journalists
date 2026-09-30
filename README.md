@@ -132,7 +132,7 @@ correction.
 
 ## Known Limitations (v1.0.0)
 
-- 33 episodes in 22 campaigns: 33 `Confirmed` (`AIPLEX-001`: the full list of affected accounts are not identified).
+- 33 episodes in 22 campaigns: 33 `Confirmed` as of September 30, 2026
 - GAYLAN-001 and RESP-001 rely on a limited number of independent sources; see `docs/data-readiness-audit.md`. For GAYLAN-001, three of the four listed sources point to the same public statement by the MP.
 - `SRC-031` and `SRC-032` (Meta notices naming AiPlex in `RESP-004` and `RESP-005`) are held in the closed evidence vault and are not publicly archived. `SRC-035` currently links to the MP's public statement, not to the Meta notice itself, and its `retrieved_at` remains `PENDING`.
 - AiPlex attribution for `LMC-002` and `LMC-003` is inferred from timing (`SRC-033`, `SRC-034`); no primary Meta notice was obtained.
