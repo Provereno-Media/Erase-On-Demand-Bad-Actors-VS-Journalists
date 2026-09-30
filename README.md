@@ -132,12 +132,11 @@ correction.
 
 ## Known Limitations (v1.0.0)
 
-- 33 episodes in 22 campaigns: 32 `Confirmed`, 1 `Unverified` (`AIPLEX-001`: the affected accounts are not identified).
-- MON-001, GAYLAN-001 and RESP-001 rely on a limited number of independent sources; see `docs/data-readiness-audit.md`. For GAYLAN-001, three of the four listed sources point to the same public statement by the MP.
+- 33 episodes in 22 campaigns: 33 `Confirmed` (`AIPLEX-001`: the full list of affected accounts are not identified).
+- GAYLAN-001 and RESP-001 rely on a limited number of independent sources; see `docs/data-readiness-audit.md`. For GAYLAN-001, three of the four listed sources point to the same public statement by the MP.
 - `SRC-031` and `SRC-032` (Meta notices naming AiPlex in `RESP-004` and `RESP-005`) are held in the closed evidence vault and are not publicly archived. `SRC-035` currently links to the MP's public statement, not to the Meta notice itself, and its `retrieved_at` remains `PENDING`.
 - AiPlex attribution for `LMC-002` and `LMC-003` is inferred from timing (`SRC-033`, `SRC-034`); no primary Meta notice was obtained.
 - `SRC-038` and `SRC-039` have no archive link or publication date, and many `archive_url` values are Wayback search patterns rather than specific snapshots.
-- Corporate registry records not yet obtained for Ares Rights, Initiatrix Technologies, Bytescare, Mogul Press and MarkScan; a MarkScan–AiPlex corporate link is not established.
 - In episodes involving AiPlex and MarkScan, the sources document removals based on unfounded or unverified notices, but the vendor named in a notice is not conclusive proof of who actually filed it. In the Respublika.kz.media episodes `RESP-004` and `RESP-005`, notices naming AiPlex as claimant also contained a MarkScan domain address; the notices are held in the closed evidence vault and are not publicly archived (`SRC-031`, `SRC-032`). This research does not investigate the activities of these companies: its subject is the platform rules and mechanisms that both named and anonymous bad-faith claimants can exploit.
 - Vendor attribution is reported as coded in `vendor_attribution`; it is not a legal finding.
 
