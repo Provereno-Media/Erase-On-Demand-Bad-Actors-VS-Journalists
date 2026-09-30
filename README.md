@@ -40,9 +40,9 @@ following are true:
 4. **Minimum evidence.** The target, platform, approximate date, claimed
    basis, and at least one verifiable source are known.
 
-Long-running campaigns against a single target are recorded as one case with
-multiple dated episodes, rather than as separate rows, to keep the dataset
-easy to navigate.
+Each row of `data/cases.csv` is one platform-level episode: a single
+enforcement action against one account, page, channel, or content set.
+Episodes that belong to the same campaign share a `campaign_id`.
 
 ## Scope: what is context only
 
@@ -69,19 +69,30 @@ The following material is documented in prose, in case notes, or in
 
 ```
 data/
-  cases.csv               Main dataset: one row per case, with dated episodes
+  cases.csv               Main dataset: one row per platform episode;
+                          episodes of one campaign share a campaign_id
   comparative_cases.csv   Context/comparative cases outside the main scope
+  actors.csv              Vendors and intermediaries referenced in cases
   sources.csv             Source registry with verification metadata
-  datapackage.json         Frictionless Data Package descriptor
+  datapackage.json        Frictionless Data Package descriptor
+  case-notes/             Short narrative case files (*.md) and supporting
+                          materials
+  Aiplex/, Google YT Search etc/,
+  [Facebook] and [Instagram] DSA VLOP Transparency Report - 28 August 2026/
+                          Source material folders
 docs/
   methodology.md           Full research methodology
   codebook.md              Field definitions and controlled vocabularies
   verification-protocol.md Source verification and attribution rules
   evidence-checklist.md    Minimum evidence package per case
   data-readiness-audit.md  Status of each candidate case
-case-notes/
-  *.md                     Short narrative case files
+  roadmap-v1.0.md          Roadmap for version 1.0
+scripts/
+  validate.py              Dataset integrity check
+site/
+  index.html               Interactive dataset page
 CHANGELOG.md
+CITATION.cff
 CONTRIBUTING.md
 SECURITY.md
 LICENSE.md
@@ -121,9 +132,11 @@ correction.
 
 ## Known Limitations (v1.0.0)
 
-- 33 cases: 32 `Confirmed`, 1 `Unverified` (AIPLEX-001, single source).
-- MON-001, GAYLAN-001 and RESP-001 rely on a limited number of independent sources; see `docs/data-readiness-audit.md`.
-- SRC-031, SRC-032 and SRC-035 (Meta notices naming AiPlex) await public archival links.
+- 33 episodes in 22 campaigns: 32 `Confirmed`, 1 `Unverified` (`AIPLEX-001`: the affected accounts are not identified).
+- MON-001, GAYLAN-001 and RESP-001 rely on a limited number of independent sources; see `docs/data-readiness-audit.md`. For GAYLAN-001, three of the four listed sources point to the same public statement by the MP.
+- `SRC-031` and `SRC-032` (Meta notices naming AiPlex in `RESP-004` and `RESP-005`) are held in the closed evidence vault and are not publicly archived. `SRC-035` currently links to the MP's public statement, not to the Meta notice itself, and its `retrieved_at` remains `PENDING`.
+- AiPlex attribution for `LMC-002` and `LMC-003` is inferred from timing (`SRC-033`, `SRC-034`); no primary Meta notice was obtained.
+- `SRC-038` and `SRC-039` have no archive link or publication date, and many `archive_url` values are Wayback search patterns rather than specific snapshots.
 - Corporate registry records not yet obtained for Ares Rights, Initiatrix Technologies, Bytescare, Mogul Press and MarkScan; a MarkScan–AiPlex corporate link is not established.
 - Vendor attribution is reported as coded in `vendor_attribution`; it is not a legal finding.
 
