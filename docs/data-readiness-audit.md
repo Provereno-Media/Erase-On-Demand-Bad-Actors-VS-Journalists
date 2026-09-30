@@ -1,6 +1,6 @@
 # Data Readiness Audit
 
-**Last updated:** 2026-09-25  
+**Last updated:** 2026-09-30  
 **Scope:** `data/cases.csv` (33 rows) and `data/actors.csv` (29 rows)  
 **Purpose:** Track outstanding evidence gaps, verification priorities, and publication blockers for each case and actor record. Updated after each research sprint.
 
@@ -45,9 +45,9 @@ Each case row is assessed across five dimensions:
 
 | Case ID | Claimant identity | Vendor attribution | Platform action | Appeal outcome | Source count | Blocker |
 |---------|------------------|--------------------|-----------------|----------------|--------------|---------|
-| AIPLEX-001 | ⚠️ AiPlex named in notices; identity not independently verified | ⚠️ claimed_affiliation + Google TR ID 40866 | ⚠️ Content removal reported; exact account IDs not confirmed | ❌ Unknown | ⚠️ SRC-003 only | ❌ Single source; target account status unconfirmed; confidence `Unverified` |
+| AIPLEX-001 | ⚠️ AiPlex named in notices; identity not independently verified | ⚠️ claimed_affiliation (SRC-039 reports claims filed by AiPlex Software) | ✅ Video removals reported (TVwithThinus and other uploaders of ANN7 clips) | ⚠️ Partially restored or re-uploaded; extent not documented | ✅ SRC-003; SRC-039 | 🔍 Add a second public source that documents the removals (SRC-003 does not); confidence `Confirmed` |
 
-**Cluster priority (HIGH):** AIPLEX-001 is the only case at `Unverified` confidence. Required: (a) second independent source; (b) confirmation that target accounts exist/existed; (c) Google Transparency Report snapshot archived.
+**Cluster priority:** AIPLEX-001 is coded `Confirmed` (2026-09-30). Remaining: a second public source that documents the removals, and the extent of restoration.
 
 ---
 
@@ -103,8 +103,8 @@ Each case row is assessed across five dimensions:
 | RESP-001 | ❌ Not disclosed | ❌ unattributed_proxy | ✅ Page permanently lost (~41 000 followers) | ❌ Permanent loss | ✅ SRC-018 | ⚠️ Single source; permanent loss documented. Vendor gap is core research gap for entire Respublika campaign |
 | RESP-002 | ⚠️ Giorgio Armani named but denied; no filing identity known | ❌ unattributed_proxy | ✅ 57 posts removed | ⚠️ Not appealed (editorial decision) | ✅ SRC-019; SRC-020 | 🔍 Obtain Armani denial statement as primary source (currently inferred) |
 | RESP-003 | ⚠️ Same as RESP-002 | ❌ unattributed_proxy | ✅ Posts removed | ⚠️ Not appealed | ✅ SRC-019 | 🔍 Same; single source |
-| RESP-004 | ✅ AiPlex named in notice; AIPLEX ID 40866 | ✅ claimed_affiliation + Google TR ID | ✅ 6 posts removed | ❌ Unknown | ✅ SRC-021 | 🔍 Attach Google TR snapshot; confirm Google TR 37% URL metric source |
-| RESP-005 | ✅ AiPlex named | ✅ claimed_affiliation + Google TR ID | ✅ Wave of removals documented (21→61→358) | ❌ Unknown | ✅ SRC-022; SRC-021 | 🔍 Attach Google TR snapshot; confirm exact removal counts with editorial |
+| RESP-004 | ✅ AiPlex named in notice | ✅ claimed_affiliation | ✅ 6 posts removed | ❌ Unknown | ✅ SRC-020; SRC-021; SRC-031 (closed vault); SRC-038 | 🔍 No Google TR snapshot attached (`sender_volume_evidence` cites SRC-038); notices in the vault contain a MarkScan domain address |
+| RESP-005 | ✅ AiPlex named | ✅ claimed_affiliation | ✅ Wave of removals documented (21→61→358) | ❌ Unknown | ✅ SRC-022; SRC-021; SRC-032 (closed vault); SRC-038 | 🔍 No Google TR snapshot attached; confirm exact removal counts with editorial; notices in the vault contain a MarkScan domain address |
 | RESP-006 | ❌ Not disclosed | ❌ unattributed_proxy | ✅ Seven block/removal events documented | ❌ Unknown | ✅ SRC-022 | ⚠️ Single source; no vendor. Temporal clustering with RESP-004/005 is circumstantial evidence of same campaign |
 
 **Cluster priority (HIGH):** The RESP-001 permanent page loss is the most severe documented outcome in the dataset and currently rests on a single source. Vendor gap for RESP-001/002/003/006 is the largest open research question in the Kazakhstan cluster.
@@ -116,8 +116,8 @@ Each case row is assessed across five dimensions:
 | Case ID | Claimant identity | Vendor attribution | Platform action | Appeal outcome | Source count | Blocker |
 |---------|------------------|--------------------|-----------------|----------------|--------------|---------|
 | LMC-001 | ⚠️ Najib Abdul Rahman Khalid named; identity not verified against registry | ❌ unattributed_proxy | ✅ Channel blocked and restored | ✅ Restored next day | ✅ SRC-023 | 🔍 Verify Khalid identity in open databases; single source |
-| LMC-002 | ✅ AiPlex reported as claimant | ✅ claimed_affiliation + Google TR ID | ✅ Account deactivated | ❌ Unknown | ✅ SRC-024; SRC-025; SRC-021 | 🔍 Confirm restoration/current status with target |
-| LMC-003 | ✅ AiPlex reported as claimant | ✅ claimed_affiliation + Google TR ID | ✅ Page blocked | ✅ Restored after ~1 month | ✅ SRC-024; SRC-025; SRC-026 | ✅ No blockers |
+| LMC-002 | ⚠️ AiPlex reported as claimant; attribution inferred from timing (SRC-033) | ⚠️ claimed_affiliation; no primary Meta notice | ✅ Account deactivated | ❌ Unknown | ✅ SRC-024; SRC-025; SRC-021; SRC-033 (inferred); SRC-038 | 🔍 Confirm restoration/current status with target; obtain primary notice |
+| LMC-003 | ⚠️ AiPlex reported as claimant; attribution inferred from timing (SRC-034) | ⚠️ claimed_affiliation; no primary Meta notice | ✅ Page blocked | ✅ Restored after ~1 month | ✅ SRC-024; SRC-025; SRC-026; SRC-034 (inferred); SRC-038 | ⚠️ AiPlex attribution inferred; no primary Meta notice |
 
 ---
 
@@ -147,9 +147,9 @@ Each case row is assessed across five dimensions:
 
 | Case ID | Claimant identity | Vendor attribution | Platform action | Appeal outcome | Source count | Blocker |
 |---------|------------------|--------------------|-----------------|----------------|--------------|---------|
-| GAYLAN-001 | ✅ AiPlex named in notices and in parliamentary legal notice | ✅ claimed_affiliation + parliamentary notice (highest confidence in dataset) | ✅ Content removed | ❌ Unknown | ✅ SRC-030 | 🔍 Single source; obtain copy of MP Dr. Abdillahi Hashi Abib's legal notice as primary document; confirm current content status |
+| GAYLAN-001 | ✅ AiPlex named in notices and in parliamentary legal notice | ✅ claimed_affiliation + parliamentary notice (highest confidence in dataset) | ✅ Content removed | ❌ Unknown | ⚠️ SRC-030; SRC-035; SRC-036 (same public statement); SRC-037 | 🔍 Obtain copy of MP Dr. Abdillahi Hashi Abib's legal notice as primary document; SRC-035 currently links to the MP's statement, not the Meta notice; confirm current content status |
 
-**Cluster priority:** GAYLAN-001 is the only case with a parliamentary accusation naming a specific vendor. Single-source status must be resolved before use in policy brief. Priority: obtain the legal notice document and a second independent source (e.g. CPJ or local Somali media report).
+**Cluster priority:** GAYLAN-001 is the only case with a parliamentary accusation naming a specific vendor. Three of the four listed sources point to the same public statement; SRC-037 adds independent context on the wider wave of restrictions. Priority: obtain the legal notice document and an independent report of the takedown itself (e.g. CPJ or local Somali media report).
 
 ---
 
@@ -175,15 +175,15 @@ Ordered by impact on publication readiness:
 1. **MON-001 second source** — WhatsApp exchange corroboration. Highest narrative value case.
 2. **GAYLAN-001 legal notice document** — Parliamentary accusation; needed for policy brief.
 3. **RESP-001 second source** — Permanent page loss; most severe outcome in dataset.
-4. **AIPLEX-001 upgrade to Confirmed** — Only `Unverified` case; requires second source + account confirmation.
+4. **AIPLEX-001 second public source** — Now `Confirmed`; add a second public source that documents the removals.
 5. **ACT-004 (Ares Rights) registry record** — Needed before Ares Rights can be used as a confirmed vendor in outputs.
 6. **ACT-005 (Initiatrix Technologies) registry record** — Same rationale.
 7. **SHISH-002 MarkScan ↔ AiPlex link** — If confirmed, strengthens AiPlex attribution across Kazakhstan cluster.
 8. **ELIM-008 vendor attribution upgrade** — Only Eliminalia case where vendor link is weak.
-9. **Google TR snapshot archival** (RESP-004/005, LMC-002/003, GAYLAN-001) — Volatile evidence; archive immediately.
+9. **Google TR snapshot archival** (RESP-004/005, LMC-002/003, GAYLAN-001) — Not attached; `sender_volume_evidence` now cites public articles instead. Volatile evidence; archive immediately.
 
 ---
 
 ## Source Completeness
 
-All source IDs referenced in `cases.csv` (SRC-001 through SRC-030) must have corresponding rows in `data/sources.csv`. Current status: **to be verified** against `data/sources.csv` in next audit sprint.
+All source IDs referenced in `cases.csv` (SRC-001 through SRC-039) have corresponding rows in `data/sources.csv` (checked 2026-09-30; also enforced by `scripts/validate.py`).

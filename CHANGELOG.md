@@ -10,8 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2026-10-03 (planned)
 
 ### Added
-- **Core Dataset (`data/cases.csv`)**: Initial standardized release featuring 33 platform enforcement episodes (32 `Confirmed`, 1 `Unverified`: AIPLEX-001) targeting independent media across Kazakhstan, Angola, Peru, Georgia, Spain, Iran, and Latin America.
-- **Sources Registry (`data/sources.csv`)**: 36 cross-referenced primary and secondary sources (SRC-031, SRC-032, SRC-035 pending archival links), including Lumen Database notices, media statements, and Qurium digital forensics reports.
+- **Core Dataset (`data/cases.csv`)**: Initial standardized release featuring 33 platform enforcement episodes (all coded `Confirmed`; see README Known Limitations) targeting independent media across Kazakhstan, Angola, Peru, Georgia, Spain, Iran, and Latin America.
+- **Sources Registry (`data/sources.csv`)**: 39 cross-referenced primary and secondary sources (SRC-031 and SRC-032 held in the closed evidence vault; SRC-035 links to the MP's public statement), including Lumen Database notices, media statements, and Qurium digital forensics reports.
 - **Comparative Registry (`data/comparative_cases.csv`)**: 5 contextual cases documenting Telegram incidents, RTBF/defamation campaigns (PrimaDaNoi), and vendor repeat-offender signals (AiPlex K-pop/Spider-Man).
 - **Frictionless Data Package (`datapackage.json`)**: Machine-readable schema specification covering all CSV tables, types, primary keys, and foreign-key relationships.
 - **Documentation Suite (`docs/`)**:
@@ -29,5 +29,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Corrected record counts in `docs/data-readiness-audit.md` (33 cases, not 35).
 - Aligned `datapackage.json` version with release (1.0.0).
+- Added public source links to `data/sources.csv` and registered SRC-037 to SRC-039; replaced placeholder `sender_volume_evidence` text in AIPLEX-001, RESP-004, RESP-005, LMC-002 and LMC-003 with source links; linked SRC-037 to GAYLAN-001.
+- Reclassified AIPLEX-001 as `Confirmed`; target recorded as TVwithThinus and other uploaders of ANN7 clips (`independent_journalist_project`), motive `commercial_reputation_scrubbing`, summary rewritten.
+- Updated README: episode definition (one row per platform episode, grouped by `campaign_id`), repository structure, and Known Limitations (closed-vault notices, inferred attribution for LMC-002/LMC-003, vendor name in a notice is not conclusive proof of who filed it).
 - Clarified Google Transparency Report metrics for vendor AiPlex: standardized on **37%** of flagged URLs not present in Google Search index, correcting earlier preliminary estimates.
 - Refactored granularity model: unified long-running cross-platform attacks via `campaign_id` while maintaining discrete platform episodes as individual `case_id` rows.
