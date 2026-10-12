@@ -10,7 +10,7 @@ Media under the [Tech Accountability Grants program](https://efcsn.com/funding-o
 
 ## Interactive Dataset
 
-[The interactive auto-updated dataset is available as a GitHub Page](https://provereno-media.github.io/Erase-On-Demand-Bad-Actors-VS-Journalists/)
+**[The interactive auto-updated dataset is available as a GitHub Page](https://provereno-media.github.io/Erase-On-Demand-Bad-Actors-VS-Journalists/)**
 
 ## What this project studies
 
