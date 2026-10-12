@@ -130,8 +130,17 @@ is maintained separately by the research team.
 
 ## How to contribute
 
+We welcome contributions from investigative journalists, OSINT researchers, media lawyers, platform accountability advocates, and impacted newsrooms.
+
+### Ways to Contribute
+
+1. **Submit a New Case**: Propose an episode of takedown abuse against a media outlet or civil society organization.
+2. **Provide Verifying Evidence**: Supply primary documentation (takedown notices, case IDs, headers, Lumen links, restoration notices) for existing cases marked `Unverified` or `Plausible`.
+3. **Report Factual Errors / Corrections**: Notify us of inaccuracies in dates, claimants, URLs, or platform actions.
+4. **Improve Data Infrastructure**: Contribute schema validation scripts, visualizers, or documentation improvements.
+
 See `CONTRIBUTING.md` for how to propose a case, submit evidence, or report a
-correction.
+correction. 
 
 ## Known Limitations (v1.0.0)
 
