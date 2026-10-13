@@ -12,6 +12,10 @@ Media under the [Tech Accountability Grants program](https://efcsn.com/funding-o
 
 **[The interactive auto-updated dataset is available as a GitHub Page](https://provereno-media.github.io/Erase-On-Demand-Bad-Actors-VS-Journalists/)**
 
+## Narrative report
+
+The report is published in English and Russian (TBD by Oct 16, 2026)
+
 ## What this project studies
 
 The central object of analysis is not individual vendors (AiPlex, MarkScan,
