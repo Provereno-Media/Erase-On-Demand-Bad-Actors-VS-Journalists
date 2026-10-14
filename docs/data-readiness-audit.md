@@ -1,6 +1,6 @@
 # Data Readiness Audit
 
-**Last updated:** 2026-09-30  
+**Last updated:** 2026-10-14  
 **Scope:** `data/cases.csv` (33 rows) and `data/actors.csv` (29 rows)  
 **Purpose:** Track outstanding evidence gaps, verification priorities, and publication blockers for each case and actor record. Updated after each research sprint.
 
@@ -33,11 +33,11 @@ Each case row is assessed across five dimensions:
 
 | Case ID | Claimant identity | Vendor attribution | Platform action | Appeal outcome | Source count | Blocker |
 |---------|------------------|--------------------|-----------------|----------------|--------------|---------|
-| ARES-001 | ⚠️ Ares Rights self-identified in notices; no corporate registry record in dataset | ⚠️ claimed_affiliation only | ✅ Content removed, restored on counter-notice | ✅ Restored | ✅ SRC-001; SRC-002 | 🔍 Obtain Spain BORME or US registry entry for Ares Rights |
-| ARES-002 | ⚠️ Same as above | ⚠️ claimed_affiliation only | ✅ Videos removed, restored | ✅ Restored | ✅ SRC-001; SRC-002 | 🔍 Same as ARES-001 |
-| ARES-003 | ⚠️ Same as above | ⚠️ claimed_affiliation only | ✅ Photos removed | ❌ Outcome unknown | ✅ SRC-001 | ❌ Single source; appeal outcome unknown |
+| ARES-001 | ⚠️ Ares Rights self-identified in notices | ⚠️ claimed_affiliation only | ✅ Removed from Scribd and Dropbox, restored | ✅ Restored (EFF: counter-notice; CPJ: host switch) | ✅ SRC-001; SRC-040 | — |
+| ARES-002 | ⚠️ Same as above | ⚠️ claimed_affiliation only | ⚠️ Removal reported by EFF and Chevron | ❌ Restoration not documented | ⚠️ SRC-001; SRC-041; SRC-042 (Chevron statement relayed) | 🔍 `Unverified`: Lumen notice or Wayback snapshot of youtube.com/texacoecuador needed |
+| ARES-003 | ❌ Sender of this complaint not named by CPJ | ⚠️ claimed_affiliation (CPJ lists Plan V among Ares Rights targets) | ⚠️ Removal reported by Plan V director; host unknown | ❌ Outcome unknown | ⚠️ SRC-040 | 🔍 `Unverified`: Lumen notice or Wayback snapshot of the Esmeraldas report needed |
 
-**Cluster priority:** ✅ Ares Rights SL registry record obtained from BORME (2026-09-28). Remaining: fresh Registro Mercantil extract for current status. Single-source status of ARES-003 does not block publication but limits confidence upgrade.
+**Cluster priority:** ✅ Ares Rights SL registry record obtained from BORME (2026-09-28). Remaining: fresh Registro Mercantil extract for current status. 2026-10-14: SRC-002 (a Qurium report on Eliminalia that does not mention Ares Rights) removed from ARES-001/002; SRC-001 (EFF, May 2014) removed from ARES-003, which it predates. ARES-002 and ARES-003 recoded `Unverified` pending Lumen or Wayback verification.
 
 ---
 
@@ -186,4 +186,4 @@ Ordered by impact on publication readiness:
 
 ## Source Completeness
 
-All source IDs referenced in `cases.csv` (SRC-001 through SRC-039) have corresponding rows in `data/sources.csv` (checked 2026-09-30; also enforced by `scripts/validate.py`).
+All source IDs referenced in `cases.csv` (SRC-001 through SRC-042) have corresponding rows in `data/sources.csv` (checked 2026-10-14; also enforced by `scripts/validate.py`).

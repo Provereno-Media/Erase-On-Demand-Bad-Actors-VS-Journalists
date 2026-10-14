@@ -19,7 +19,7 @@ Every case in `data/cases.csv` carries an overall `confidence` rating, and all a
 
 | Confidence Level | Definition | Minimum Evidentiary Requirement |
 |---|---|---|
-| **Confirmed** | Factual occurrence is verified beyond reasonable doubt. | Corroborated by **at least two independent, reliable sources** (e.g., platform notice + newsroom corroboration; Lumen entry + target domain verification; corporate registry extract + official court record). |
+| **Confirmed** | Factual occurrence is verified beyond reasonable doubt. | Corroborated by **at least two independent, reliable sources** (e.g., platform notice + newsroom corroboration; Lumen entry + target domain verification; corporate registry extract + official court record), **or verified independently by a researcher**: a preserved Wayback Machine snapshot, a Lumen Database record, or direct contact between a researcher and the affected newsroom, recorded in `data/sources.csv` as `researcher_verification`. |
 | **Unverified** | Factual occurrence is documented but relies on a single source. | Single direct source (e.g., unilateral public statement by affected newsroom without published notice; single uncorroborated media report; unconfirmed notice submission). |
 | **Plausible** | Coherent, logical explanation consistent with established behavioral patterns, but lacks conclusive direct evidence. | Pattern-based attribution (e.g., notice mimics known vendor templates or IP addresses, but lacks cryptographic signatures, raw email headers, or explicit corporate attribution). |
 

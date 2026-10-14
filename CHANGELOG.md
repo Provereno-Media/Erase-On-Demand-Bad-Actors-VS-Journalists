@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.1] - 2026-10-14
+
+### Changed
+- `Confirmed` now also covers independent verification by a researcher (a preserved Wayback Machine snapshot, a Lumen Database record, or direct contact with the affected newsroom); README, `methodology.md` and `verification-protocol.md` aligned.
+- ARES-001: replaced SRC-002 with CPJ (SRC-040); summary now records the Scribd and Dropbox removals.
+- ARES-002: `Confirmed` → `Unverified`; SRC-002 replaced with Free Beacon (SRC-041) and Techdirt (SRC-042); `appeal_outcome` and `date_end` set to `unknown` (no source documents restoration); `date_start` set to 2013-11.
+- ARES-003: `Confirmed` → `Unverified`; SRC-001 (published before the episode and not mentioning Plan V) replaced with CPJ (SRC-040); `platform` set to `unknown`.
+- SRC-002: publication date corrected to 2021-04-20; no longer cited by any case.
+- ACT-004: corrected note — Chevron was a target of Ares Rights notices, not a client.
+
+### Added
+- Sources SRC-040 (CPJ, 2016), SRC-041 (Free Beacon, 2013), SRC-042 (Techdirt, 2013).
+- `platform = unknown` and the `source_type` values in use, including `researcher_verification`, documented in `codebook.md` and `datapackage.json`.
+
+---
+
 ## [1.0.0] - 2026-10-03 (planned)
 
 ### Added
