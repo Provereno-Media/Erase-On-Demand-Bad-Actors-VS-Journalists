@@ -160,4 +160,17 @@ correction.
 - In episodes involving AiPlex and MarkScan, the sources document removals based on unfounded or unverified notices, but the vendor named in a notice is not conclusive proof of who actually filed it. In the Respublika.kz.media episodes `RESP-004` and `RESP-005`, notices naming AiPlex as claimant also contained a MarkScan domain address; the notices are held in the closed evidence vault and are not publicly archived (`SRC-031`, `SRC-032`). This research does not investigate the activities of these companies: its subject is the platform rules and mechanisms that both named and anonymous bad-faith claimants can exploit.
 - Vendor attribution is reported as coded in `vendor_attribution`; it is not a legal finding.
 
+## AI Use Disclosure
+
+The following large language models and AI tools were used in preparing this study:
+
+- Perplexity Deep Research: for initial region-focused data collection on takedowns, and for preliminary identification of links between the companies behind the takedowns
+- Gemma 4 E4B (locally deployed) and Claude Sonnet 5: for automated analysis of Lumen Database statistics and of Google’s and Meta’s own DSA compliance reports
+- Tesari’s First Resort: for collecting data on the companies behind the takedowns and analyzing their connections
+- Perplexity, Gemma 4 E4B (locally deployed), Claude Sonnet 5, GPT 6 Sol and Gemini 3.8 Flash: for normalizing and labeling the collected data before publishing it to the open repository
+- Claude Opus 5.5: for configuring the interactive dashboard and for automating the ongoing addition of new cases to the repository structure
+- GPT Terra [TBC]: for the draft English translation of the study
+
+All data, as well as the accuracy of the translation against the original Russian-language study, were independently verified by the study’s authors and editors.
+
 Run `python3 scripts/validate.py` to check dataset integrity.
