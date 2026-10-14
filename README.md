@@ -3,7 +3,7 @@
 This repository documents verified cases of abuse of platform content-moderation
 and notice-and-takedown systems used to silence independent media, journalists'
 organizations, and civil society groups. The project is developed by Provereno
-Media under the [Tech Accountability Grants program](https://efcsn.com/funding-opportunities/winners-tech-accountability-grants/) by the European Fact-Checking Standards Network, Co-funded by the European Union.
+Media under the [Tech Accountability Grants program](https://efcsn.com/funding-opportunities/winners-tech-accountability-grants/) by the European Fact-Checking Standards Network, co-funded by the European Union.
 
 <img width="1200" height="257" alt="EU-logo" src="https://github.com/user-attachments/assets/c79d0e4a-2dcf-4546-88a4-68b2b6314a2d" />
 
@@ -149,7 +149,7 @@ We welcome contributions from investigative journalists, OSINT researchers, medi
 See `CONTRIBUTING.md` for how to propose a case, submit evidence, or report a
 correction. 
 
-## Known Limitations (v1.0.0)
+## Known Limitations (v1.0.0) as of October 14th, 2026
 
 - 33 episodes in 22 campaigns: 31 `Confirmed` and 2 `Unverified` (ARES-002, ARES-003) as of October 14, 2026.
 - 14 `Confirmed` episodes cite a single public source and rely on direct researcher contact with the affected newsroom: ELIM-002, ELIM-004, ELIM-007, ELIM-008, MOGUL-001, SHISH-001, WEB-001, PJ-002, RESP-001, RESP-003, RESP-006, LMC-001, MON-001 and MON-002. These verifications are not yet recorded as `researcher_verification` entries in `data/sources.csv`.
