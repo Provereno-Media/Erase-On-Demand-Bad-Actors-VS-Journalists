@@ -106,7 +106,7 @@ See `docs/evidence-checklist.md` for the full per-case checklist.
 Every factual claim, not just every case, receives an independent confidence
 rating:
 
-- **Confirmed** — corroborated by two or more independent sources.
+- **Confirmed** — corroborated by two or more independent sources or verified independently by researcher.
 - **Unverified** — supported by a single source.
 - **Plausible** — consistent with an established pattern but not directly
   evidenced.
