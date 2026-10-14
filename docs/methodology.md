@@ -107,6 +107,8 @@ Every factual claim, not just every case, receives an independent confidence
 rating:
 
 - **Confirmed** — corroborated by two or more independent sources or verified independently by researcher.
+  Researcher verification means a preserved Wayback Machine snapshot, a Lumen Database record, or direct contact between a researcher and the affected newsroom. Each such verification is recorded in
+  `data/sources.csv` with `source_type = researcher_verification`.
 - **Unverified** — supported by a single source.
 - **Plausible** — consistent with an established pattern but not directly
   evidenced.

@@ -62,6 +62,7 @@ The primary dataset documents observed episodes where platform notice-and-action
 - `hosting_provider`: Web hosting infrastructure provider (e.g., DigitalOcean, AWS).
 - `cloud_storage`: Cloud file hosting / distribution service (e.g., Dropbox, Scribd).
 - `domain_registrar`: Domain registrar or DNS provider (e.g., easyDNS).
+- `unknown`: Enforcement action is documented, but the platform or host that executed it is not identified in the sources.
 
 #### 1.2.3 `enforcement_basis`
 - `copyright`: Claimed infringement of copyright, audio/video rights, or DMCA takedown.
@@ -150,7 +151,7 @@ The source registry provides full bibliographic and forensic provenance for ever
 | Field Name | Type | Description |
 |---|---|---|
 | `source_id` | String | Unique source identifier (e.g., `SRC-001`). Primary key. |
-| `source_type` | Enum | `lumen_notice`, `platform_transparency_report`, `court_filing`, `corporate_registry`, `investigative_report`, `newsroom_direct_evidence`, `press_release`. |
+| `source_type` | Enum | `lumen_notice`, `platform_transparency_report`, `platform_notice`, `court_filing`, `corporate_registry`, `investigative_report`, `newsroom_direct_evidence`, `press_release`, `primary_legal_document`, `primary_statement`, `inferred_attribution`, `researcher_verification` (a Wayback snapshot, Lumen record, or direct researcher contact with the affected newsroom that supports `Confirmed` status; see `verification-protocol.md` §2). |
 | `title` | String | Title of document, investigation, or notice. |
 | `author_or_publisher` | String | Entity that authored or published the source (e.g., `Qurium`, `EFF`, `Lumen Database`, `OCCRP`). |
 | `url` | String | Public web URL or archive permalink. |

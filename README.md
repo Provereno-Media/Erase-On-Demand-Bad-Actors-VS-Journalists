@@ -110,7 +110,10 @@ README.md
 
 Every case is coded with a confidence level:
 
-- **Confirmed** — corroborated by two or more independent sources.
+- **Confirmed** — corroborated by two or more independent sources or verified
+  independently by a researcher (a preserved Wayback Machine snapshot, a Lumen
+  Database record, or direct contact between a researcher and the affected
+  newsroom).
 - **Unverified** — supported by a single source.
 - **Plausible** — logically consistent with the pattern but not yet proven.
 
@@ -148,7 +151,8 @@ correction.
 
 ## Known Limitations (v1.0.0)
 
-- 33 episodes in 22 campaigns: 33 `Confirmed` as of September 30, 2026
+- 33 episodes in 22 campaigns: 31 `Confirmed` and 2 `Unverified` (ARES-002, ARES-003) as of October 14, 2026.
+- 14 `Confirmed` episodes cite a single public source and rely on direct researcher contact with the affected newsroom: ELIM-002, ELIM-004, ELIM-007, ELIM-008, MOGUL-001, SHISH-001, WEB-001, PJ-002, RESP-001, RESP-003, RESP-006, LMC-001, MON-001 and MON-002. These verifications are not yet recorded as `researcher_verification` entries in `data/sources.csv`.
 - GAYLAN-001 and RESP-001 rely on a limited number of independent sources; see `docs/data-readiness-audit.md`. For GAYLAN-001, three of the four listed sources point to the same public statement by the MP.
 - `SRC-031` and `SRC-032` (Meta notices naming AiPlex in `RESP-004` and `RESP-005`) are held in the closed evidence vault and are not publicly archived. `SRC-035` currently links to the MP's public statement, not to the Meta notice itself, and its `retrieved_at` remains `PENDING`.
 - AiPlex attribution for `LMC-002` and `LMC-003` is inferred from timing (`SRC-033`, `SRC-034`); no primary Meta notice was obtained.
