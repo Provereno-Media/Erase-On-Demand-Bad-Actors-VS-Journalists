@@ -5,11 +5,6 @@ and notice-and-takedown systems used to silence independent media, journalists'
 organizations, and civil society groups. The project is developed by Provereno
 Media under the [Tech Accountability Grants program](https://efcsn.com/funding-opportunities/winners-tech-accountability-grants/) by the European Fact-Checking Standards Network.
 
-**Co-funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or European Health and Digital Executive Agency (HADEA). Neither the European Union nor the granting authority can be held responsible for them.**
-
-<img width="1200" height="257" alt="EU-logo" src="https://github.com/user-attachments/assets/c79d0e4a-2dcf-4546-88a4-68b2b6314a2d" />
-
-
 ## Interactive Dataset
 
 **[The interactive auto-updated dataset is available as a GitHub Page](https://provereno-media.github.io/Erase-On-Demand-Bad-Actors-VS-Journalists/)**
@@ -175,4 +170,6 @@ The following large language models and AI tools were used in preparing this stu
 
 All data, as well as the accuracy of the translation against the original Russian-language study, were independently verified by the study’s authors and editors.
 
-Run `python3 scripts/validate.py` to check dataset integrity.
+**Co-funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or European Health and Digital Executive Agency (HADEA). Neither the European Union nor the granting authority can be held responsible for them.**
+
+<img width="1200" height="257" alt="EU-logo" src="https://github.com/user-attachments/assets/c79d0e4a-2dcf-4546-88a4-68b2b6314a2d" />
