@@ -146,7 +146,7 @@ We welcome contributions from investigative journalists, OSINT researchers, medi
 See `CONTRIBUTING.md` for how to propose a case, submit evidence, or report a
 correction. 
 
-## Known Limitations (v1.0.0) as of October 14th, 2026
+## Known Limitations (v1.0.0) as of November 17th, 2026
 
 - 33 episodes in 22 campaigns: 31 `Confirmed` and 2 `Unverified` (ARES-002, ARES-003) as of October 14, 2026.
 - 14 `Confirmed` episodes cite a single public source and rely on direct researcher contact with the affected newsroom: ELIM-002, ELIM-004, ELIM-007, ELIM-008, MOGUL-001, SHISH-001, WEB-001, PJ-002, RESP-001, RESP-003, RESP-006, LMC-001, MON-001 and MON-002. These verifications are not yet recorded as `researcher_verification` entries in `data/sources.csv`.
@@ -166,10 +166,10 @@ The following large language models and AI tools were used in preparing this stu
 - Tesari’s First Resort: for collecting data on the companies behind the takedowns and analyzing their connections
 - Perplexity, Gemma 4 E4B (locally deployed), Claude Sonnet 5, GPT 6 Sol and Gemini 3.8 Flash: for normalizing and labeling the collected data before publishing it to the open repository
 - Claude Opus 5.5: for configuring the interactive dashboard and for automating the ongoing addition of new cases to the repository structure
-- GPT Terra [TBC]: for the draft English translation of the study
+- Claude Fable 5.2: for the draft English translation of the study
 
 All data, as well as the accuracy of the translation against the original Russian-language study, were independently verified by the study’s authors and editors.
 
-**Co-funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or European Health and Digital Executive Agency (HADEA). Neither the European Union nor the granting authority can be held responsible for them.**
+**Co-funded by the European Union. Views and opinions expressed are however, those of the author(s) only and do not necessarily reflect those of the European Union or European Health and Digital Executive Agency (HADEA). Neither the European Union nor the granting authority can be held responsible for them.**
 
 <img width="1200" height="257" alt="EU-logo" src="https://github.com/user-attachments/assets/c79d0e4a-2dcf-4546-88a4-68b2b6314a2d" />
