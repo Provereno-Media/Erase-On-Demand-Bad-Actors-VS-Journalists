@@ -93,7 +93,7 @@ The primary dataset documents observed episodes where platform notice-and-action
 - `confirmed`: Attribution to a specific vendor/entity is established by direct domain email headers, admission, corporate registry link, or judicial/regulatory finding.
 - `claimed_affiliation`: Complainant used vendor's corporate name or domain in the notice, but third-party identity theft or spoofing cannot be completely excluded without raw headers.
 - `technical_forensic_attribution`: Attribution established via digital forensics (metadata analysis, shared network infrastructure, Lumen pattern clustering).
-- `self_admitted_sub_contractor`: Individual or entity has publicly or semi-publicly acknowledged working as a sub-contractor, affiliate, or agent for a named vendor, establishing a non-disputable contractual relationship without constituting a full `confirmed` corporate-level attribution (e.g., LinkedIn profile, marketplace listing, or court declaration).
+- `self_admitted_sub_contractor`: Individual or entity has publicly or semi-publicly acknowledged acting as a sub-contractor, affiliate or agent for a third party (named or not), without constituting a confirmed corporate-level attribution (e.g., LinkedIn profile, marketplace listing, court declaration, or a documented exchange with journalists).
 - `unattributed_proxy`: Notice submitted through disposable personal emails, shell entities, or proxies with unknown commercial ownership.
 
 #### 1.2.7 `platform_action`

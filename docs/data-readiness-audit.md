@@ -117,7 +117,7 @@ Each case row is assessed across five dimensions:
 
 | Case ID | Claimant identity | Vendor attribution | Platform action | Appeal outcome | Source count | Blocker |
 |---------|------------------|--------------------|-----------------|----------------|--------------|---------|
-| LMC-001 | ⚠️ Najib Abdul Rahman Khalid named; identity not verified against registry | ❌ unattributed_proxy | ✅ Channel blocked and restored | ✅ Restored next day | ✅ SRC-023 | 🔍 Verify Khalid identity in open databases; single source |
+| LMC-001 | ⚠️ Najib Abdul Rahman Khalid (account name as quoted by the foundation); identity not verified | ❌ unattributed_proxy | ✅ Channel blocked and restored | ✅ Restored next day | ✅ SRC-023 | 🔍 Verify Khalid identity in open databases; single source |
 | LMC-002 | ⚠️ AiPlex reported as claimant; attribution inferred from timing (SRC-033) | ⚠️ claimed_affiliation; no primary Meta notice | ✅ Account deactivated | ❌ Unknown | ✅ SRC-024; SRC-025; SRC-021; SRC-033 (inferred); SRC-038 | 🔍 Confirm restoration/current status with target; obtain primary notice |
 | LMC-003 | ⚠️ AiPlex reported as claimant; attribution inferred from timing (SRC-034) | ⚠️ claimed_affiliation; no primary Meta notice | ✅ Page blocked | ✅ Restored after ~1 month | ✅ SRC-024; SRC-025; SRC-026; SRC-034 (inferred); SRC-038 | ⚠️ AiPlex attribution inferred; no primary Meta notice |
 
@@ -138,7 +138,7 @@ Each case row is assessed across five dimensions:
 
 | Case ID | Claimant identity | Vendor attribution | Platform action | Appeal outcome | Source count | Blocker |
 |---------|------------------|--------------------|-----------------|----------------|--------------|---------|
-| MON-001 | ✅ Ripu Singh / Aditya Singh — self-admitted; WhatsApp exchange documented | ✅ self_admitted_sub_contractor (novel attribution type) | ✅ Channel terminated and restored | ✅ Restored | ✅ SRC-029 | 🔍 Single source (SRC-029 is Monitori's own reporting); obtain independent corroboration of WhatsApp exchange |
+| MON-001 | ✅ Ripu Singh (name in YouTube notice) — self-admitted; WhatsApp exchange documented | ✅ self_admitted_sub_contractor (novel attribution type) | ✅ Channel terminated and restored | ✅ Restored | ✅ SRC-029 | 🔍 Single source (SRC-029 is Monitori's own reporting); obtain independent corroboration of WhatsApp exchange |
 | MON-002 | ❌ Claimant identity assessed fictitious; no real match | ❌ unattributed_proxy | ✅ Page removed and restored | ✅ Restored | ✅ SRC-029 | 🔍 Same single-source issue; ultimate client unknown |
 
 **Cluster priority (HIGH):** MON-001 is analytically the richest case in the dataset (self-admission of sub-contractor role, price list). Single-source status (target's own reporting) is a publication risk. Priority: obtain independent journalist corroboration of the WhatsApp exchange.
@@ -166,7 +166,7 @@ Each case row is assessed across five dimensions:
 | ACT-005 | Initiatrix Technologies | ❌ India MCA record not confirmed | ❌ unknown | ❌ HIGH: search MCA for exact company name |
 | ACT-006 | Mogul Press | ❌ US state of incorporation unknown | ❌ unknown | 🔍 Search Delaware / Wyoming / Nevada SOS for Mogul Press |
 | ACT-007 | Bytescare | ❌ India MCA record not confirmed | ❌ unknown | 🔍 Search India MCA |
-| ACT-029 | Ripu Singh / Aditya Singh | ❌ Individual; no company registration | ❌ N/A | 🔍 Identify employing entity; confirm relationship to AiPlex or affiliate |
+| ACT-029 | Ripu Singh (name in YouTube notice) | ❌ Individual; no company registration | ❌ N/A | 🔍 Identify employing entity; confirm relationship to AiPlex or affiliate |
 
 ---
 
