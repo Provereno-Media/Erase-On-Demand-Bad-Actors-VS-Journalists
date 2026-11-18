@@ -11,7 +11,7 @@ Media under the [Tech Accountability Grants program](https://efcsn.com/funding-o
 
 ## Narrative report
 
-The report is published in English and Russian (TBD by Oct 16, 2026)
+The narrative report will be published in English and Russian. A link will be added here on publication.
 
 ## What this project studies
 
@@ -146,12 +146,12 @@ We welcome contributions from investigative journalists, OSINT researchers, medi
 See `CONTRIBUTING.md` for how to propose a case, submit evidence, or report a
 correction. 
 
-## Known Limitations (v1.0.2) as of November 18, 2026
+## Known Limitations (v1.0.3) as of November 18, 2026
 
 - 34 episodes in 22 campaigns: 32 `Confirmed` and 2 `Unverified` (ARES-002, ARES-003) as of November 18, 2026.
 - Researcher verifications for single-source `Confirmed` episodes are recorded as `researcher_verification` entries in `data/sources.csv`: Lumen Database records and a Wayback Machine snapshot (`SRC-043`–`SRC-048`) and written confirmations from the affected newsrooms obtained in August 2026 (`SRC-049`–`SRC-054`). The newsroom correspondence is held in the closed evidence vault and is not published. `ELIM-007` (domain registrar episode) and `ELIM-008` remain `Confirmed` on the basis of `SRC-008` and `SRC-009` respectively, without a separate published `researcher_verification` entry.
-- GAYLAN-001 and RESP-001 rely on a limited number of independent sources; see `docs/data-readiness-audit.md`. For GAYLAN-001, three of the four listed sources point to the same public statement by the MP.
-- `SRC-031` and `SRC-032` (Meta notices naming AiPlex in `RESP-004` and `RESP-005`) are held in the closed evidence vault and are not publicly archived. `SRC-035` currently links to the MP's public statement, not to the Meta notice itself, and its `retrieved_at` remains `PENDING`.
+- GAYLAN-001 and RESP-001 rely on a limited number of independent sources; see `docs/data-readiness-audit.md`. For GAYLAN-001, three of the four listed sources point to the same public statement by the MP; the fourth, `SRC-035`, is a screenshot of the Meta notice itself (`data/case-notes/Gaylan/Gaylan1.jpeg`).
+- `SRC-031` and `SRC-032` (Meta notices naming AiPlex in `RESP-004` and `RESP-005`) are held in the closed evidence vault and are not publicly archived.
 - AiPlex attribution for `LMC-002` and `LMC-003` is inferred from timing (`SRC-033`, `SRC-034`); no primary Meta notice was obtained.
 - `SRC-038` and `SRC-039` have no archive link or publication date, and many `archive_url` values are Wayback search patterns rather than specific snapshots.
 - In episodes involving AiPlex and MarkScan, the sources document removals based on unfounded or unverified notices, but the vendor named in a notice is not conclusive proof of who actually filed it. In the Respublika.kz.media episodes `RESP-004` and `RESP-005`, notices naming AiPlex as claimant also contained a MarkScan domain address; the notices are held in the closed evidence vault and are not publicly archived (`SRC-031`, `SRC-032`). This research does not investigate the activities of these companies: its subject is the platform rules and mechanisms that both named and anonymous bad-faith claimants can exploit.
@@ -170,6 +170,6 @@ The following large language models and AI tools were used in preparing this stu
 
 All data, as well as the accuracy of the translation against the original Russian-language study, were independently verified by the study’s authors and editors.
 
-**Co-funded by the European Union. Views and opinions expressed are however, those of the author(s) only and do not necessarily reflect those of the European Union or European Health and Digital Executive Agency (HADEA). Neither the European Union nor the granting authority can be held responsible for them.**
+**Co-funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor the granting authority can be held responsible for them.**
 
 <img width="1200" height="257" alt="EU-logo" src="https://github.com/user-attachments/assets/c79d0e4a-2dcf-4546-88a4-68b2b6314a2d" />

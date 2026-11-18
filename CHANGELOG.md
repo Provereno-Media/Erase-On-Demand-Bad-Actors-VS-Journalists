@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.3] - 2026-11-18
+
+### Changed
+- `claimant_identity_verified` set to `no` for `RESP-004`, `RESP-005`, `LMC-002`, `LMC-003`, `GAYLAN-001` and `SHISH-002`: a claimant named in a notice is not an independently verified identity (see Known Limitations).
+- `ELIM-001`: `SRC-004` removed (it does not cover this case); supported by `SRC-005`.
+- `ELIM-003`: `SRC-004` replaced with `SRC-005`; `target_country` corrected from `ES` to `MX`. `ACT-022` (Página 66) corrected to `MX`, Mexican local outlet (Campeche).
+- `ELIM-005`, `ELIM-006`: `SRC-004` and `SRC-007` (neither covers these cases) replaced with Qurium, "Dark Ops Undercovered: Episode I" (`SRC-055`); `ELIM-006` also cites The Elephant's own account (`SRC-056`); `date_start` set to 2020-11.
+- `SRC-004` and `SRC-007` are no longer cited by any case.
+- `SRC-035` now points to the screenshot of the Meta notice in `data/case-notes/Gaylan/Gaylan1.jpeg`; `retrieved_at` set.
+- Project title unified across `datapackage.json`, `LICENSE.md`, `CITATION.cff` and README: "Erase on Demand: How Bad Actors Silence Independent Journalism".
+- README: EU disclaimer names the European Education and Culture Executive Agency (EACEA), which manages the CERV programme; outdated report date removed.
+- `methodology.md` §2: episodes are separate rows linked by `campaign_id`, as in the data.
+- `CITATION.cff`: individual authors added.
+- `docs/data-readiness-audit.md` marked as a historical snapshot.
+
+### Added
+- Sources `SRC-055` (Qurium, 2021-04-12) and `SRC-056` (The Elephant, 2021-04-13).
+
+---
+
 ## [1.0.2] - 2026-11-18
 
 ### Added

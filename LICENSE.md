@@ -21,7 +21,7 @@ Full legal text: [https://creativecommons.org/licenses/by/4.0/legalcode](https:/
 ```bibtex
 @misc{provereno_media_2026_erase_on_demand,
   author       = {{Provereno Media}},
-  title        = {Erase on Demand: Abuse of Platform Moderation and Copyright Systems Against Media},
+  title        = {Erase on Demand: How Bad Actors Silence Independent Journalism},
   year         = {2026},
   publisher    = {GitHub},
   journal      = {GitHub repository},

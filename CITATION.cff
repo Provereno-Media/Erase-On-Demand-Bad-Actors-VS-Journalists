@@ -1,9 +1,15 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
 title: "Erase on Demand: How Bad Actors Silence Independent Journalism"
-version: 1.0.2
+version: 1.0.3
 date-released: 2026-11-18
 license: CC-BY-4.0
 authors:
+  - family-names: "Bannikov"
+    given-names: "Pavel"
+    affiliation: "Provereno Media"
+  - family-names: "Bakhareva"
+    given-names: "Maria"
+    affiliation: "Provereno Media"
   - name: "Provereno Media"
 repository-code: "https://github.com/Provereno-Media/Erase-On-Demand-Bad-Actors-VS-Journalists"
