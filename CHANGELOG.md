@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [Unreleased]
+
+### Site
+- Page title set to the study title; links to methodology, codebook and repository now point to `Provereno-Media/Erase-On-Demand-Bad-Actors-VS-Journalists`.
+- Funding block added above the footer: logos of the EU (co-funding), EFCSN and Provereno, in that order, with the EACEA disclaimer as in `README.md`. Logo files are in `site/assets/`.
+- "Narrative report" note added to "About the data"; the link will be added on publication.
+- Case details: duplicate "DSA articles coded" line removed; `failed_control` values separated with ", ".
+
+---
+
 ## [1.0.4] - 2026-11-18
 
 ### Added
