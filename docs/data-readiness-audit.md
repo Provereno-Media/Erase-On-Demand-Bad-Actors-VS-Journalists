@@ -1,5 +1,7 @@
 # Data Readiness Audit
 
+> **Historical snapshot.** This audit reflects the dataset as of 2026-10-14 (33 episodes). Later changes, including the v1.0.1 definition of `Confirmed` (which also covers a recorded researcher verification) and the corrections in v1.0.2 and v1.0.3, are listed in `CHANGELOG.md` and summarised under Known Limitations in `README.md`. Where this document and the data differ, `data/cases.csv` and `data/sources.csv` take precedence.
+
 **Last updated:** 2026-10-14  
 **Scope:** `data/cases.csv` (33 rows) and `data/actors.csv` (29 rows)  
 **Purpose:** Track outstanding evidence gaps, verification priorities, and publication blockers for each case and actor record. Updated after each research sprint.

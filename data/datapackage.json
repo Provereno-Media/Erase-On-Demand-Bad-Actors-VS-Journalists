@@ -1,8 +1,8 @@
 {
   "name": "erase-on-demand-dataset",
-  "title": "Erase on Demand: Abuse of Platform Notice-and-Action Moderation Against Independent Journalism",
+  "title": "Erase on Demand: How Bad Actors Silence Independent Journalism",
   "description": "Structured dataset of documented commercial reputation-management and copyright/trademark enforcement abuse against investigative newsrooms, media projects, and civil society organizations.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://github.com/Provereno-Media/Erase-On-Demand-Bad-Actors-VS-Journalists",
   "licenses": [
     {

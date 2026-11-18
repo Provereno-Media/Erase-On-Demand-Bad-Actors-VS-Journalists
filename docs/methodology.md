@@ -17,10 +17,9 @@ project, or civil society/press-freedom organization.
 
 A single case may contain multiple **episodes** — distinct dated actions on
 one or more platforms (e.g., a Facebook page removal in January followed by
-an Instagram restriction in March against the same target). Episodes are
-recorded within the case record rather than as separate top-level rows,
-unless the mechanism, claimant, or platform differs enough to warrant
-independent tracking and cross-referencing via a shared `campaign_id`.
+an Instagram restriction in March against the same target). Each episode is
+recorded as a separate row in `data/cases.csv`; episodes belonging to the
+same case or campaign are linked through a shared `campaign_id`.
 
 ## 3. Inclusion criteria
 
