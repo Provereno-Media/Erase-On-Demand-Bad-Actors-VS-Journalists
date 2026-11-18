@@ -4,7 +4,7 @@
 
 Between **July and August 2026**, Monitori's YouTube channel was terminated following three copyright complaints filed by three separate claimants. YouTube notifications identified one claimant by name as **Ripu Singh**, who alleged that Monitori's investigations had copied thumbnail designs and images without permission.
 
-Monitori journalists contacted the email address attached to the complaint posing as potential clients seeking video-removal services. The claimant moved the conversation to WhatsApp; the phone number associated with that account appeared in telephone databases under the name **Aditya Singh**.
+Monitori journalists contacted the email address attached to the complaint posing as potential clients seeking video-removal services. The claimant moved the conversation to WhatsApp; the phone number associated with that account is listed in an online phone directory under the name **Aditya Singh**; this does not establish his identity.
 
 In the WhatsApp exchange, the individual — apparently based in India — explicitly acknowledged removing the Monitori channel (*"I terminated this channel"*). He described standard service pricing as **$3,000–$5,000** and offered to withdraw his strikes for **$380 per video**. He confirmed operating as a sub-contractor within a chain of intermediaries and stated he did not know the identity of the ultimate client. He neither confirmed nor denied that "Aditya Singh" was his real name.
 

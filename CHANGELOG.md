@@ -11,6 +11,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.6] - 2026-11-18
+
+### Changed
+- Names of private individuals reworded to state only what the sources show:
+  - `ACT-029`: renamed `Ripu Singh (name in YouTube notice)`; "Aditya Singh" is recorded only as the name under which the WhatsApp number is listed in a phone directory, per OCCRP/Monitori; the unsourced `parent_company` value "AiPlex (inferred sub-contractor)" removed.
+  - `MON-001`: `claimant_name_as_reported` and `summary` reworded accordingly.
+  - `LMC-001`: claimant recorded as the account name quoted by the foundation (Factcheck.kz, 23 Feb 2026); `claimant_identity_verified` set to `no`.
+  - Case notes for Monitori, Legal Media Centre and Webamooz reworded to match; the Webamooz note no longer names an individual from closed-vault material.
+- `codebook.md`: `self_admitted_sub_contractor` covers acknowledged work for a third party, named or not (as in MON-001).
+- README Known Limitations: new item on names of private individuals.
+- `docs/data-readiness-audit.md`: actor and claimant labels aligned with the above.
+
 ## [1.0.5] - 2026-11-18
 
 ### Fixed
@@ -27,7 +39,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Case details: duplicate "DSA articles coded" line removed; `failed_control` values separated with ", ".
 
 ### Repository
-- 1.0.0 marked as released (the "planned" label removed). Git tags `v1.0.0`–`v1.0.5` mark the repository state of each data release.
+- 1.0.0 marked as released (the "planned" label removed). Git tags `v1.0.0`–`v1.0.6` mark the repository state of each data release.
 - Planned: the GitHub Release and Zenodo DOI will be made once the full-text Russian and English reports are added to the repository.
 - README, LICENSE, SECURITY: funding programme named as CERV (via EFCSN) instead of "Tech Accountability Grants".
 - Removed `data/Gaylan/` (byte-identical duplicate of `data/case-notes/Gaylan/`, which SRC-035 links to).

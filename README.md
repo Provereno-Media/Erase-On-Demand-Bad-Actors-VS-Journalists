@@ -155,6 +155,7 @@ correction.
 - `SRC-038` and `SRC-039` have no archive link or publication date, and many `archive_url` values are Wayback search patterns rather than specific snapshots.
 - In episodes involving AiPlex and MarkScan, the sources document removals based on unfounded or unverified notices, but the vendor named in a notice is not conclusive proof of who actually filed it. In the Respublika.kz.media episodes `RESP-004` and `RESP-005`, notices naming AiPlex as claimant also contained a MarkScan domain address; the notices are held in the closed evidence vault and are not publicly archived (`SRC-031`, `SRC-032`). This research does not investigate the activities of these companies: its subject is the platform rules and mechanisms that both named and anonymous bad-faith claimants can exploit.
 - Vendor attribution is reported as coded in `vendor_attribution`; it is not a legal finding.
+- Names of private individuals are reproduced only as they appear in platform notices or in published reporting (OCCRP/Monitori, Factcheck.kz), in their role as claimants. Inclusion does not establish a person's identity, and names shown in notices may be false or used without the named person's knowledge. Corrections: see SECURITY.md.
 
 ## AI Use Disclosure
 
