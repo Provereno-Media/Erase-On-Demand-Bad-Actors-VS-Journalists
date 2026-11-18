@@ -146,10 +146,10 @@ We welcome contributions from investigative journalists, OSINT researchers, medi
 See `CONTRIBUTING.md` for how to propose a case, submit evidence, or report a
 correction. 
 
-## Known Limitations (v1.0.0) as of November 17th, 2026
+## Known Limitations (v1.0.2) as of November 18, 2026
 
-- 33 episodes in 22 campaigns: 31 `Confirmed` and 2 `Unverified` (ARES-002, ARES-003) as of October 14, 2026.
-- 14 `Confirmed` episodes cite a single public source and rely on direct researcher contact with the affected newsroom: ELIM-002, ELIM-004, ELIM-007, ELIM-008, MOGUL-001, SHISH-001, WEB-001, PJ-002, RESP-001, RESP-003, RESP-006, LMC-001, MON-001 and MON-002. These verifications are not yet recorded as `researcher_verification` entries in `data/sources.csv`.
+- 34 episodes in 22 campaigns: 32 `Confirmed` and 2 `Unverified` (ARES-002, ARES-003) as of November 18, 2026.
+- Researcher verifications for single-source `Confirmed` episodes are recorded as `researcher_verification` entries in `data/sources.csv`: Lumen Database records and a Wayback Machine snapshot (`SRC-043`–`SRC-048`) and written confirmations from the affected newsrooms obtained in August 2026 (`SRC-049`–`SRC-054`). The newsroom correspondence is held in the closed evidence vault and is not published. `ELIM-007` (domain registrar episode) and `ELIM-008` remain `Confirmed` on the basis of `SRC-008` and `SRC-009` respectively, without a separate published `researcher_verification` entry.
 - GAYLAN-001 and RESP-001 rely on a limited number of independent sources; see `docs/data-readiness-audit.md`. For GAYLAN-001, three of the four listed sources point to the same public statement by the MP.
 - `SRC-031` and `SRC-032` (Meta notices naming AiPlex in `RESP-004` and `RESP-005`) are held in the closed evidence vault and are not publicly archived. `SRC-035` currently links to the MP's public statement, not to the Meta notice itself, and its `retrieved_at` remains `PENDING`.
 - AiPlex attribution for `LMC-002` and `LMC-003` is inferred from timing (`SRC-033`, `SRC-034`); no primary Meta notice was obtained.
