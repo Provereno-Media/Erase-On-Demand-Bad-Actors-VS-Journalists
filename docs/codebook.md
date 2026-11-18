@@ -37,7 +37,8 @@ The primary dataset documents observed episodes where platform notice-and-action
 | `platform_action` | Enum | Yes | Action taken by the platform against the target. Controlled vocabulary (see §1.2.7). |
 | `appeal_outcome` | Enum | Yes | Final observed status following counter-notice or editorial appeal. Controlled vocabulary (see §1.2.8). |
 | `failed_control` | String | Yes | Platform systemic control failure points. Comma-separated enum values (see §1.2.9). |
-| `dsa_articles_implicated` | String | No | Articles of Regulation (EU) 2022/2065 (DSA) relevant to the failure. Comma-separated list (e.g., `17, 20, 34, 35`). |
+| `failure_points` | String | Yes | Failure points as numbered in Part 2 of the report (`FP1`–`FP6`). Comma-separated. Derived by the rules in §1.2.10. |
+| `dsa_articles_implicated` | String | No | Articles of Regulation (EU) 2022/2065 (DSA) linked to the episode's failure points by the mapping in §1.2.10. Comma-separated list (e.g., `16,17,20`). |
 | `confidence` | Enum | Yes | Overarching evidentiary confidence of the case. Controlled vocabulary (`Confirmed`, `Unverified`, `Plausible`). |
 | `summary` | String | Yes | Concise factual summary of the episode (1–3 sentences). |
 | `source_ids` | String | Yes | Semicolon-separated identifiers referencing records in `data/sources.csv` (e.g., `SRC-001; SRC-004`). |
@@ -120,6 +121,34 @@ The primary dataset documents observed episodes where platform notice-and-action
 - `unverified_claimant_identity`: Platform allows filing using unverified disposable emails, spoofed identities, or fabricated legal entities.
 - `disproportionate_enforcement`: Platform deactivates entire institutional accounts or history rather than evaluating isolated disputed items.
 - `lack_of_trusted_channel_scrutiny`: Failure to audit or sanction high-volume repeat abusers utilizing privileged submission pipelines.
+
+#### 1.2.10 `failure_points` (Report Failure Points FP1–FP6)
+
+`failure_points` uses the numbering of the six failure points in Part 2 of the report. Values are derived from fields already coded for each episode, so that the report's framework and the data stay aligned without separate manual coding. `failed_control` is kept unchanged.
+
+| Code | Failure point (report, Part 2) | Assigned when | DSA articles |
+|---|---|---|---|
+| `FP1` | 2.1 The platform does not check whether the claimant holds rights to the content | `abuse_mechanism` includes `fictitious_rights_claim`, `legitimate_looking_bad_faith`, `prior_upload_scheme`, `fake_corporate_entity`, `impersonation_claimant` or `backdated_article` | 16, 17 |
+| `FP2` | 2.2 The platform does not check the claimant's identity | `failed_control` includes `unverified_claimant_identity`, or `abuse_mechanism` includes `impersonation_claimant` or `fake_corporate_entity` | 16, 17 |
+| `FP3` | 2.3 The platform does not check who published the material first | `abuse_mechanism` includes `backdated_article` or `prior_upload_scheme` | 16, 17, 34, 35 |
+| `FP4` | 2.4 Repeated bad-faith behaviour of the sender is not taken into account | `high_volume_sender` = `yes`, or `failed_control` includes `lack_of_trusted_channel_scrutiny` | 23 |
+| `FP5` | 2.5 No enhanced scrutiny when complaint volume spikes and complaints are politically sensitive | `motive_category` is `political_state_censorship` or `parliamentarily_recognised_censorship`, and the campaign has two or more episodes or `abuse_mechanism` includes `automated_mass_filing` | 34, 35 |
+| `FP6` | 2.6 The internal complaint and statement-of-reasons mechanism does not work in practice | `failed_control` includes `flawed_appeal_pipeline` or `asymmetric_burden_of_proof`, or `appeal_outcome` is `rejected`, `permanent_loss` or `restored_editorial_appeal` | 16, 17, 20 |
+
+`dsa_articles_implicated` is the union of the articles for the episode's failure points, plus Article 22 where `failed_control` includes `lack_of_trusted_channel_scrutiny` (privileged submission channels; report, section 1.1).
+
+`claimant_identity_verified = no` does not by itself assign `FP2`: a claimant named in a notice is rarely independently verified, and using that field would mark almost every episode.
+
+**Correspondence between `failed_control` and the report's failure points**
+
+| `failed_control` value | Failure points |
+|---|---|
+| `lack_of_pre_action_verification` | Context for `FP1`–`FP3` (assigned through `abuse_mechanism`) |
+| `unverified_claimant_identity` | `FP2` |
+| `lack_of_trusted_channel_scrutiny` | `FP4` (and DSA Article 22) |
+| `flawed_appeal_pipeline` | `FP6` |
+| `asymmetric_burden_of_proof` | `FP6` |
+| `disproportionate_enforcement` | No direct counterpart; recorded in `failed_control` only |
 
 ---
 
