@@ -28,7 +28,7 @@ The primary dataset documents observed episodes where platform notice-and-action
 | `enforcement_basis` | Enum | Yes | Legal or policy basis invoked in the complaint. Controlled vocabulary (see §1.2.3). |
 | `abuse_mechanism` | Enum | Yes | Specific tactical mechanism used to manipulate platform moderation. Controlled vocabulary (see §1.2.4). |
 | `motive_category` | Enum | Yes | Apparent strategic driver or objective behind the takedown. Controlled vocabulary (see §1.2.5). |
-| `claimant_name_as_reported` | String | Yes | Name of the complainant exactly as displayed in the notice or platform notification (e.g., `Abhishek Dhorelia`, `Ares Rights`, `Giorgio Armani`). |
+| `claimant_name_as_reported` | String | Yes | Name of the complainant exactly as displayed in the notice or platform notification (e.g., `Ares Rights`, `Giorgio Armani`; text truncated by the platform is kept as displayed and marked as truncated). |
 | `claimant_affiliation` | String | Yes | Corporate or organizational affiliation claimed by the sender (e.g., `MarkScan`, `AiPlex`, `Self-employed`). |
 | `claimant_identity_verified` | Enum | Yes | Independent verification status of the individual sender's identity. Controlled vocabulary (`yes`, `no`, `unknown`). |
 | `vendor_attribution` | Enum | Yes | Evidentiary status linking the takedown to a commercial reputation/copyright vendor. Controlled vocabulary (see §1.2.6). |
