@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - "Narrative report" note added to "About the data"; the link will be added on publication.
 - Case details: duplicate "DSA articles coded" line removed; `failed_control` values separated with ", ".
 
+### Repository
+- 1.0.0 marked as released (the "planned" label removed). Git tags `v1.0.0`–`v1.0.4` mark the repository state of each data release.
+- Planned: Zenodo DOI will be enabled once the full-text Russian and English reports are added to the repository.
+
 ---
 
 ## [1.0.4] - 2026-11-18
@@ -81,7 +85,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [1.0.0] - 2026-10-03 (planned)
+## [1.0.0] - 2026-10-03
 
 ### Added
 - **Core Dataset (`data/cases.csv`)**: Initial standardized release featuring 33 platform enforcement episodes (all coded `Confirmed`; see README Known Limitations) targeting independent media across Kazakhstan, Angola, Peru, Georgia, Spain, Iran, and Latin America.
