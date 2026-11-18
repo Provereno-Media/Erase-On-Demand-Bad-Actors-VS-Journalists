@@ -85,7 +85,7 @@ Each case row is assessed across five dimensions:
 | Case ID | Claimant identity | Vendor attribution | Platform action | Appeal outcome | Source count | Blocker |
 |---------|------------------|--------------------|-----------------|----------------|--------------|---------|
 | SHISH-001 | ⚠️ Purported Kazakh orgs denied filing | ❌ unattributed_proxy — no vendor identified | ✅ Account deactivated | ❌ Unknown | ✅ SRC-013 | ❌ No vendor attribution; unattributed_proxy limits analytical value |
-| SHISH-002 | ✅ Abhishek Dhorelia verified as named claimant in notice | ⚠️ MarkScan / marcscan.in address; relationship to AiPlex unconfirmed | ✅ Account deactivated and restored | ✅ Restored | ✅ SRC-013; SRC-014 | 🔍 Confirm MarkScan ↔ AiPlex relationship via India MCA or LinkedIn |
+| SHISH-002 | ✅ Abhishek Dhoreliya verified as named claimant in notice | ⚠️ MarkScan / markscan.in address; relationship to AiPlex unconfirmed | ✅ Account deactivated and restored | ✅ Restored | ✅ SRC-013; SRC-014 | 🔍 Confirm MarkScan ↔ AiPlex relationship via India MCA or LinkedIn |
 
 ---
 
@@ -160,7 +160,7 @@ Each case row is assessed across five dimensions:
 | Actor ID | Name | Registration confirmed | Privileged access status | Outstanding gap |
 |----------|------|------------------------|--------------------------|------------------|
 | ACT-001 | AiPlex Software Pvt Ltd | ✅ India MCA U72200KA2003PTC032145 | ⚠️ claimed_but_unconfirmed_by_platform | 🔍 Attach current Google TR reporter page snapshot; confirm no EU establishment (Article 22 DSA) |
-| ACT-002 | MarkScan Digital IP | ❌ No registration record | ❌ unknown | 🔍 Search India MCA for marcscan.in registrant; confirm or rule out AiPlex subsidiary relationship |
+| ACT-002 | MarkScan Digital IP | ❌ No registration record | ❌ unknown | 🔍 Search India MCA for markscan.in registrant; confirm or rule out AiPlex subsidiary relationship |
 | ACT-003 | Eliminalia S.L. | ✅ Spain BORME B67704901 | ❌ unknown | ⚠️ Confirm current registration status (company may have been wound down post-2023 exposure) |
 | ACT-004 | Ares Rights SL | ✅ BORME primary: RM Barcelona hoja B-321497 (2010, 2012, 2013 notices); CIF B64106016 secondary only | ❌ unknown | ⚠️ LOW: fresh official extract for current status (2026-09-28) |
 | ACT-005 | Initiatrix Technologies | ❌ India MCA record not confirmed | ❌ unknown | ❌ HIGH: search MCA for exact company name |

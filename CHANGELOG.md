@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+---
+
+## [1.0.5] - 2026-11-18
+
+### Fixed
+- `SHISH-002`: `claimant_name_as_reported` now gives the claimant exactly as shown in the Instagram notice (`MR. ABHISHEK DHORELIYA SOLE PROPRIETOR OF MA…`, truncated by the platform); the surname was previously misspelled "Dhorelia".
+- MarkScan domain corrected from `marcscan.in` to `markscan.in` (the notice gives `internet.enforcement@markscan.in`) in `SHISH-002`, `ACT-002`, `SRC-014` and `docs/data-readiness-audit.md`.
+- `ACT-001`: the note no longer links AiPlex to the SHISH-002 notice, which does not name AiPlex; it now refers to the MarkScan domain address in the AiPlex notices of `RESP-004`/`RESP-005` (closed vault), as stated in README Known Limitations.
+- `codebook.md`: the `claimant_name_as_reported` example no longer uses a private individual's name; truncated platform text is kept as displayed and marked as truncated.
+
 ### Site
 - Page title set to the study title; links to methodology, codebook and repository now point to `Provereno-Media/Erase-On-Demand-Bad-Actors-VS-Journalists`.
 - Funding block added above the footer: logos of the EU (co-funding), EFCSN and Provereno, in that order. Logo files are in `site/assets/`.
@@ -17,7 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Case details: duplicate "DSA articles coded" line removed; `failed_control` values separated with ", ".
 
 ### Repository
-- 1.0.0 marked as released (the "planned" label removed). Git tags `v1.0.0`–`v1.0.4` mark the repository state of each data release.
+- 1.0.0 marked as released (the "planned" label removed). Git tags `v1.0.0`–`v1.0.5` mark the repository state of each data release.
 - Planned: the GitHub Release and Zenodo DOI will be made once the full-text Russian and English reports are added to the repository.
 - README, LICENSE, SECURITY: funding programme named as CERV (via EFCSN) instead of "Tech Accountability Grants".
 - Removed `data/Gaylan/` (byte-identical duplicate of `data/case-notes/Gaylan/`, which SRC-035 links to).
