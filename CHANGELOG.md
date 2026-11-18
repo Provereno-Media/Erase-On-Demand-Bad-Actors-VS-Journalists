@@ -11,13 +11,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Site
 - Page title set to the study title; links to methodology, codebook and repository now point to `Provereno-Media/Erase-On-Demand-Bad-Actors-VS-Journalists`.
-- Funding block added above the footer: logos of the EU (co-funding), EFCSN and Provereno, in that order, with the EACEA disclaimer as in `README.md`. Logo files are in `site/assets/`.
+- Funding block added above the footer: logos of the EU (co-funding), EFCSN and Provereno, in that order. Logo files are in `site/assets/`.
+- "About this research": funding programme renamed to the EU Citizens, Equality, Rights and Values (CERV) programme (via EFCSN, https://efcsn.com/cerv-2026/), replacing "Tech Accountability Grants"; the EACEA disclaimer (as in `README.md`) moved into this block.
 - "Narrative report" note added to "About the data"; the link will be added on publication.
 - Case details: duplicate "DSA articles coded" line removed; `failed_control` values separated with ", ".
 
 ### Repository
 - 1.0.0 marked as released (the "planned" label removed). Git tags `v1.0.0`–`v1.0.4` mark the repository state of each data release.
-- Planned: Zenodo DOI will be enabled once the full-text Russian and English reports are added to the repository.
+- Planned: the GitHub Release and Zenodo DOI will be made once the full-text Russian and English reports are added to the repository.
+- README, LICENSE, SECURITY: funding programme named as CERV (via EFCSN) instead of "Tech Accountability Grants".
+- Removed `data/Gaylan/` (byte-identical duplicate of `data/case-notes/Gaylan/`, which SRC-035 links to).
+- Removed `data/Aiplex/`: a saved Google Transparency Report page whose data tables load by script, so the copy held no AiPlex figures; it also bundled Google's analytics.js. The AiPlex figures are cited from the live report.
+- Renamed `data/case-notes/shishkin-like/shisnkin_like_*.jpg` to `shishkin_like_*.jpg`.
+- Removed `docs/roadmap-v1.0.md` (internal Russian-language plan for the 1.0.0 release, now complete; kept in git history).
 
 ---
 
