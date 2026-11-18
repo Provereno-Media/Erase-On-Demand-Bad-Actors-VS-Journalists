@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.2] - 2026-11-18
+
+### Added
+- `ELIM-009`: Google Search episode of the 2021 Maka Angola campaign (DMCA notices sent to Google in the names of Esquerda.net and Global News); `ELIM-007` remains the domain registrar episode.
+- Researcher verification records `SRC-043`–`SRC-048` (Lumen Database notices 19738319, 19997993, 38942439, 24360852, 24529477 and a Wayback Machine snapshot of the copied article in the Mogul Press case).
+- Researcher verification records `SRC-049`–`SRC-054`: written confirmations from the affected newsrooms obtained in August 2026 (correspondence held in the closed evidence vault, not published).
+
+### Changed
+- `ELIM-002`, `ELIM-004`: source corrected from `SRC-004` (Qurium, November 2021, which does not cover these cases) to `SRC-002` (Qurium, "Dark Ops Undercovered: Episode II", April 2021); Lumen records added.
+- `MOGUL-001`: `claimant_name_as_reported` set to LMG Media Group, as named in the DMCA notice; Lumen record and Wayback snapshot added.
+- `SHISH-001`, `WEB-001`, `PJ-002`, `RESP-001`, `RESP-003`, `RESP-006`, `LMC-001`, `MON-001`, `MON-002`: researcher verification records linked.
+- `SRC-002`, `SRC-008`: Wayback search patterns replaced with specific snapshots; `SRC-008` title corrected (the article does not cover The Elephant).
+- README Known Limitations updated (34 episodes, 32 `Confirmed`).
+
+---
+
 ## [1.0.1] - 2026-10-14
 
 ### Changed
