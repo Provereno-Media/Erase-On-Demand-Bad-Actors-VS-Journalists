@@ -2,7 +2,7 @@
   "name": "erase-on-demand-dataset",
   "title": "Erase on Demand: How Bad Actors Silence Independent Journalism",
   "description": "Structured dataset of documented commercial reputation-management and copyright/trademark enforcement abuse against investigative newsrooms, media projects, and civil society organizations.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "homepage": "https://github.com/Provereno-Media/Erase-On-Demand-Bad-Actors-VS-Journalists",
   "licenses": [
     {
@@ -245,8 +245,18 @@
             }
           },
           {
+            "name": "failure_points",
+            "type": "string",
+            "description": "Failure points FP1–FP6 as numbered in the report (Part 2); comma-separated. Derived from failed_control, abuse_mechanism, high_volume_sender, motive_category and appeal_outcome (see codebook §1.2.10).",
+            "constraints": {
+              "required": true,
+              "pattern": "^FP[1-6](,FP[1-6])*$"
+            }
+          },
+          {
             "name": "dsa_articles_implicated",
-            "type": "string"
+            "type": "string",
+            "description": "DSA articles linked to the episode's failure points (codebook §1.2.10); comma-separated."
           },
           {
             "name": "confidence",

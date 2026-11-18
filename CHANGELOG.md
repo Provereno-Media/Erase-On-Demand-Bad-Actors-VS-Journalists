@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.4] - 2026-11-18
+
+### Added
+- `cases.csv`: new field `failure_points` (`FP1`–`FP6`), using the numbering of the six failure points in Part 2 of the report. Values are derived from existing fields by the rules in `codebook.md` §1.2.10; `failed_control` is unchanged.
+- `codebook.md` §1.2.10: failure point definitions, assignment rules, DSA article mapping and a correspondence table between `failed_control` and the failure points.
+- `validate.py` checks `failure_points` values; the site shows failure points and DSA articles in case details.
+
+### Changed
+- `dsa_articles_implicated` recoded for all episodes from the failure point mapping (previously `17,20,34,35` for 32 of 33 episodes). Article 23 now appears in 6 episodes and Article 22 in 5.
+
+---
+
 ## [1.0.3] - 2026-11-18
 
 ### Changed

@@ -146,7 +146,7 @@ We welcome contributions from investigative journalists, OSINT researchers, medi
 See `CONTRIBUTING.md` for how to propose a case, submit evidence, or report a
 correction. 
 
-## Known Limitations (v1.0.3) as of November 18, 2026
+## Known Limitations (v1.0.4) as of November 18, 2026
 
 - 34 episodes in 22 campaigns: 32 `Confirmed` and 2 `Unverified` (ARES-002, ARES-003) as of November 18, 2026.
 - Researcher verifications for single-source `Confirmed` episodes are recorded as `researcher_verification` entries in `data/sources.csv`: Lumen Database records and a Wayback Machine snapshot (`SRC-043`–`SRC-048`) and written confirmations from the affected newsrooms obtained in August 2026 (`SRC-049`–`SRC-054`). The newsroom correspondence is held in the closed evidence vault and is not published. `ELIM-007` (domain registrar episode) and `ELIM-008` remain `Confirmed` on the basis of `SRC-008` and `SRC-009` respectively, without a separate published `researcher_verification` entry.
