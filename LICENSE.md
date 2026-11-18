@@ -1,6 +1,6 @@
 # Licensing and Terms of Use
 
-This repository is an open-source research and data initiative developed by **Provereno Media** under the **Tech Accountability Grants** program (EFCSN / CERV, Grant Agreement 101236606).
+This repository is an open-source research and data initiative developed by **Provereno Media** under the EU **Citizens, Equality, Rights and Values (CERV)** programme through the European Fact-Checking Standards Network (EFCSN / CERV, Grant Agreement 101236606).
 
 ## Data and Documentation
 

@@ -16,7 +16,7 @@ If you discover a security vulnerability in our repository scripts, data pipelin
 
 ## 2. Personal Data & Privacy Protection (GDPR Compliance)
 
-This project strictly adheres to European data protection standards (EU GDPR) and the mandate of the Tech Accountability Grants program (EFCSN / CERV):
+This project strictly adheres to European data protection standards (EU GDPR) and the terms of the CERV programme grant received through the EFCSN (EFCSN / CERV):
 
 ### What is Published Publicly
 - Corporate and organizational registry information (public company names, registration numbers, jurisdictions).

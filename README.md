@@ -3,7 +3,7 @@
 This repository documents verified cases of abuse of platform content-moderation
 and notice-and-takedown systems used to silence independent media, journalists'
 organizations, and civil society groups. The project is developed by Provereno
-Media under the [Tech Accountability Grants program](https://efcsn.com/funding-opportunities/winners-tech-accountability-grants/) by the European Fact-Checking Standards Network.
+Media under the EU [Citizens, Equality, Rights and Values (CERV) programme](https://efcsn.com/cerv-2026/) through the European Fact-Checking Standards Network (EFCSN).
 
 ## Interactive Dataset
 
@@ -90,7 +90,6 @@ docs/
   verification-protocol.md Source verification and attribution rules
   evidence-checklist.md    Minimum evidence package per case
   data-readiness-audit.md  Status of each candidate case
-  roadmap-v1.0.md          Roadmap for version 1.0
 scripts/
   validate.py              Dataset integrity check
 site/
