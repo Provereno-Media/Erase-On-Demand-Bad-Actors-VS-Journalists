@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Repository
+- `SECURITY.md` and `CONTRIBUTING.md`: single contact address `info@provereno.media`; PGP line removed; response time "as soon as possible, normally within 5 working days".
+- `SECURITY.md`: new section 4, "Corrections and Right of Reply" (referenced from README Known Limitations); names of private individuals added to "What is Published Publicly", as in README.
+- Added the issue templates `Case Proposal` and `Evidence / Correction` (`.github/ISSUE_TEMPLATE/`), which `CONTRIBUTING.md` already referred to but which did not exist.
+
 ---
 
 ## [1.0.6] - 2026-11-18

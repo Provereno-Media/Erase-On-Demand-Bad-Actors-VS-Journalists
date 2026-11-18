@@ -48,7 +48,7 @@ Before proposing a new case, verify that it meets the **Scope of Inclusion** def
 ### Option B: Via Confidential Channels (For Sensitive Documents)
 If your evidence contains unredacted email headers, non-public correspondence with platform support, or sensitive identity information:
 - **Do NOT post unredacted personal data directly to GitHub.**
-- Contact the research team securely via email: `tech-accountability@provereno.media` (PGP key available upon request) or through secure messaging.
+- Contact the research team at `info@provereno.media`. Do not attach sensitive material to the first message; ask for a secure channel and we will agree on one with you.
 - Submitted materials will be reviewed, redacted, and placed in the project's encrypted **Evidence Vault**, while only anonymized/public metadata will be committed to `cases.csv`.
 
 ---
