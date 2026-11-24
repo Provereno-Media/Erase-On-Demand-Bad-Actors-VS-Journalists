@@ -10,7 +10,7 @@ Confidence: Confirmed (AiPlex/MarkScan investigation summary, project file).
 
 ## January 2, 2026 — Facebook, editorial page (W02)
 
-Respublika’s Facebook page (approximately 41,000 followers) was removed in its entirety after the outlet published an analysis of an AI-generated video of President Tokayev’s New Year’s address. The complainant was not disclosed to the editors. The page was later restored following an intervention by Reporters Without Borders (RSF) (Provereno team, 2026-11-24).
+Respublika’s Facebook page (approximately 41,000 followers) was removed in its entirety after the outlet published an analysis of an AI-generated video of President Tokayev’s New Year’s address. The complainant was not disclosed to the editors. The page was later restored following an intervention by Reporters Without Borders (RSF) (confirmed by a Provereno researcher, 2026-11-24; SRC-062).
 
 Confidence: Confirmed (tirek.info, 2026-01-02; exclusive.kz).
 

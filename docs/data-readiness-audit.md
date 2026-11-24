@@ -102,14 +102,14 @@ Each case row is assessed across five dimensions:
 
 | Case ID | Claimant identity | Vendor attribution | Platform action | Appeal outcome | Source count | Blocker |
 |---------|------------------|--------------------|-----------------|----------------|--------------|---------|
-| RESP-001 | ❌ Not disclosed | ❌ unattributed_proxy | ✅ Page removed (~41 000 followers), later restored | ✅ Restored after RSF intervention (2026-11-24 update) | ✅ SRC-018 | ⚠️ Restoration recorded on the Provereno team's information; public source for the restoration still to be attached. Vendor gap is core research gap for entire Respublika campaign |
+| RESP-001 | ❌ Not disclosed | ❌ unattributed_proxy | ✅ Page removed (~41 000 followers), later restored | ✅ Restored after RSF intervention (2026-11-24 update) | ✅ SRC-018; SRC-052; SRC-062 | ✅ Restoration confirmed by a Provereno researcher (SRC-062). Vendor gap is core research gap for entire Respublika campaign |
 | RESP-002 | ⚠️ Giorgio Armani named but denied; no filing identity known | ❌ unattributed_proxy | ✅ 57 posts removed; restoration claimed (SRC-058, SRC-059), not confirmed with newsroom | ⚠️ Not appealed (editorial decision) | ✅ SRC-019; SRC-020; SRC-058; SRC-059 | 🔍 Obtain Armani denial statement as primary source (currently inferred) |
 | RESP-003 | ⚠️ Same as RESP-002 | ❌ unattributed_proxy | ✅ Posts removed; restoration claimed (SRC-058, SRC-059), not confirmed with newsroom | ⚠️ Not appealed | ✅ SRC-019; SRC-052; SRC-058; SRC-059 | 🔍 Same; confirm restoration with newsroom |
 | RESP-004 | ✅ AiPlex named in notice | ✅ claimed_affiliation | ✅ 6 posts removed | ❌ Unknown | ✅ SRC-020; SRC-021; SRC-031 (closed vault); SRC-038 | 🔍 No Google TR snapshot attached (`sender_volume_evidence` cites SRC-038); notices in the vault contain a MarkScan domain address |
 | RESP-005 | ✅ AiPlex named | ✅ claimed_affiliation | ✅ Wave of removals documented (21→61→358) | ❌ Unknown | ✅ SRC-022; SRC-021; SRC-032 (closed vault); SRC-038 | 🔍 No Google TR snapshot attached; confirm exact removal counts with editorial; notices in the vault contain a MarkScan domain address |
 | RESP-006 | ❌ Not disclosed | ❌ unattributed_proxy | ✅ Seven block/removal events documented | ⚠️ Partially restored | ✅ SRC-022; SRC-060; SRC-061 | ⚠️ Single source; no vendor. Temporal clustering with RESP-004/005 is circumstantial evidence of same campaign |
 
-**Cluster priority (HIGH):** RESP-001 was recoded from permanent loss to restored (2026-11-24); a public source for the restoration is needed. Vendor gap for RESP-001/002/003/006 is the largest open research question in the Kazakhstan cluster.
+**Cluster priority (HIGH):** RESP-001 was recoded from permanent loss to restored (2026-11-24; researcher-confirmed, SRC-062). Vendor gap for RESP-001/002/003/006 is the largest open research question in the Kazakhstan cluster.
 
 ---
 
@@ -176,13 +176,13 @@ Ordered by impact on publication readiness:
 
 1. **MON-001 second source** — WhatsApp exchange corroboration. Highest narrative value case.
 2. **GAYLAN-001 legal notice document** — Parliamentary accusation; needed for policy brief.
-3. **RESP-001 restoration source** — Page restored after RSF intervention; attach a public or vault source.
-4. **AIPLEX-001 second public source** — Now `Confirmed`; add a second public source that documents the removals.
-5. **ACT-004 (Ares Rights) registry record** — Needed before Ares Rights can be used as a confirmed vendor in outputs.
-6. **ACT-005 (Initiatrix Technologies) registry record** — Same rationale.
-7. **SHISH-002 MarkScan ↔ AiPlex link** — If confirmed, strengthens AiPlex attribution across Kazakhstan cluster.
-8. **ELIM-008 vendor attribution upgrade** — Only Eliminalia case where vendor link is weak.
-9. **Google TR snapshot archival** (RESP-004/005, LMC-002/003, GAYLAN-001) — Not attached; `sender_volume_evidence` now cites public articles instead. Volatile evidence; archive immediately.
+3. **AIPLEX-001 second public source** — Now `Confirmed`; add a second public source that documents the removals.
+4. **ACT-004 (Ares Rights) registry record** — Needed before Ares Rights can be used as a confirmed vendor in outputs.
+5. **ACT-005 (Initiatrix Technologies) registry record** — Same rationale.
+6. **SHISH-002 MarkScan ↔ AiPlex link** — If confirmed, strengthens AiPlex attribution across Kazakhstan cluster.
+7. **ELIM-008 vendor attribution upgrade** — Only Eliminalia case where vendor link is weak.
+8. **Google TR snapshot archival** (RESP-004/005, LMC-002/003, GAYLAN-001) — Not attached; `sender_volume_evidence` now cites public articles instead. Volatile evidence; archive immediately.
+9. **SRC-022 link** — Title refers to the April 2026 wave counts and Instagram statistics, but the URL points to post 14258 (8 March 2026, 'Giorgio Armani' removals). Find the correct April post(s) and fix the URL; check SRC-033 (same URL) as well.
 
 ---
 

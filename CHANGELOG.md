@@ -10,12 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed (data, 2026-11-24): restoration status, Kazakhstan cluster
-- `RESP-001`: `appeal_outcome` `permanent_loss` → `restored_editorial_appeal` (page restored after an RSF intervention, per the Provereno team; public source to be attached).
+- `RESP-001`: `appeal_outcome` `permanent_loss` → `restored_editorial_appeal` (page restored after an RSF intervention, confirmed by a Provereno researcher; SRC-062).
 - `LMC-002`: `appeal_outcome` `unknown` → `restored_editorial_appeal`; `date_start` set to 2026-04-16; summary records that Meta's notice reportedly cited fraud and deception (SRC-057). `failure_points` gains `FP6`, and `dsa_articles_implicated` is updated accordingly (§1.2.10).
 - `SHISH-001`: `appeal_outcome` `unknown` → `permanent_loss`, as in the case note; `failure_points` gains `FP6`, and `dsa_articles_implicated` gains Article 20.
 - `RESP-006`: `appeal_outcome` `unknown` → `partially_restored` (SRC-060, SRC-061).
 - `RESP-002`, `RESP-003`: `appeal_outcome` unchanged (`not_appealed`); summaries record the restoration claimed by the newsroom and by Authentix (SRC-058, SRC-059), pending confirmation with the newsroom.
-- New sources SRC-057 to SRC-061.
+- New sources SRC-057 to SRC-062.
 - New `appeal_outcome` value `partially_restored` (`codebook.md` §1.2.8, `datapackage.json`).
 - Case notes (Respublika, Legal Media Centre), `Respublika_attack_waves_dataset.xlsx` (W02, W03, W04, W09) and `docs/data-readiness-audit.md` updated to match.
 
