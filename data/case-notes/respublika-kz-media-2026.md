@@ -10,13 +10,13 @@ Confidence: Confirmed (AiPlex/MarkScan investigation summary, project file).
 
 ## January 2, 2026 — Facebook, editorial page (W02)
 
-Respublika’s Facebook page (approximately 41,000 followers) was removed in its entirety after the outlet published an analysis of an AI-generated video of President Tokayev’s New Year’s address. The complainant was not disclosed to the editors. The page has not been restored.
+Respublika’s Facebook page (approximately 41,000 followers) was removed in its entirety after the outlet published an analysis of an AI-generated video of President Tokayev’s New Year’s address. The complainant was not disclosed to the editors. The page was later restored following an intervention by Reporters Without Borders (RSF) (Provereno team, 2026-11-24).
 
 Confidence: Confirmed (tirek.info, 2026-01-02; exclusive.kz).
 
 ## March 2026 — Facebook and Instagram, posts about the Constitution (W03, W04)
 
-In **March 2026**, 57 posts about Kazakhstan’s Constitution were removed from Facebook, while all Instagram cards on the same subject were removed (the exact number was not specified). The stated basis was a trademark infringement complaint filed in the name of **Giorgio Armani** (a suspected fictitious complainant). The editors reported that the option to appeal was unavailable on either platform; the content has not been restored.
+In **March 2026**, 57 posts about Kazakhstan’s Constitution were removed from Facebook, while all Instagram cards on the same subject were removed (the exact number was not specified). The stated basis was a trademark infringement complaint filed in the name of **Giorgio Armani** (a suspected fictitious complainant). The editors reported that the option to appeal was unavailable on either platform. On 11 March 2026 the newsroom stated that the impersonator had been stopped and that Meta had restored everything (respublikaKZmediaNEWS, post 14278); Authentix, the service provider of the complaint email address, told RSF that Meta had reinstated all affected profiles and posts (RSF, 18 May 2026). Restoration has not yet been confirmed with the newsroom.
 
 Confidence: Confirmed (exclusive.kz, 2026-03-07/08).
 
@@ -48,7 +48,7 @@ Confidence: Confirmed (Instagram appeal reel, DXIGTIvI1ot, 2026-04-13).
 
 ## December 2025–April 2026 — aggregate Instagram statistics (W09)
 
-During this period, the editors recorded 7 separate instances of their Instagram page being blocked or removed and 3 instances of content being removed from the outlet’s Instagram account. The most recent page removal occurred on April 7, 2026. Some blocks were reversed; the content removed in the third instance had not been restored at the time of the report.
+During this period, the editors recorded 7 separate instances of their Instagram page being blocked or removed and 3 instances of content being removed from the outlet’s Instagram account. The most recent page removal occurred on April 7, 2026. Some blocks were reversed: on 18 January the business account was restored after appeal and disappeared again the same day (post 13931), and on 8 February the newsroom reported that its accounts had been restored (post 14049). The content removed in the third instance had not been restored at the time of the report. Coded `partially_restored`.
 
 Confidence: Confirmed (respublikaKZmediaNEWS, “sad statistics,” April 2026).
 

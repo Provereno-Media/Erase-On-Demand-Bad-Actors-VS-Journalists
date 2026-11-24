@@ -229,6 +229,7 @@
               "enum": [
                 "restored_editorial_appeal",
                 "restored_formal_counternotice",
+                "partially_restored",
                 "rejected",
                 "pending",
                 "not_appealed",

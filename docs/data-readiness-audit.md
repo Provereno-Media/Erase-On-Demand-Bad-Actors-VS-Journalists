@@ -84,7 +84,7 @@ Each case row is assessed across five dimensions:
 
 | Case ID | Claimant identity | Vendor attribution | Platform action | Appeal outcome | Source count | Blocker |
 |---------|------------------|--------------------|-----------------|----------------|--------------|---------|
-| SHISH-001 | ⚠️ Purported Kazakh orgs denied filing | ❌ unattributed_proxy — no vendor identified | ✅ Account deactivated | ❌ Unknown | ✅ SRC-013 | ❌ No vendor attribution; unattributed_proxy limits analytical value |
+| SHISH-001 | ⚠️ Purported Kazakh orgs denied filing | ❌ unattributed_proxy — no vendor identified | ✅ Account deactivated and permanently deleted | ❌ Permanent loss | ✅ SRC-013 | ❌ No vendor attribution; unattributed_proxy limits analytical value |
 | SHISH-002 | ✅ Abhishek Dhoreliya verified as named claimant in notice | ⚠️ MarkScan / markscan.in address; relationship to AiPlex unconfirmed | ✅ Account deactivated and restored | ✅ Restored | ✅ SRC-013; SRC-014 | 🔍 Confirm MarkScan ↔ AiPlex relationship via India MCA or LinkedIn |
 
 ---
@@ -102,14 +102,14 @@ Each case row is assessed across five dimensions:
 
 | Case ID | Claimant identity | Vendor attribution | Platform action | Appeal outcome | Source count | Blocker |
 |---------|------------------|--------------------|-----------------|----------------|--------------|---------|
-| RESP-001 | ❌ Not disclosed | ❌ unattributed_proxy | ✅ Page permanently lost (~41 000 followers) | ❌ Permanent loss | ✅ SRC-018 | ⚠️ Single source; permanent loss documented. Vendor gap is core research gap for entire Respublika campaign |
-| RESP-002 | ⚠️ Giorgio Armani named but denied; no filing identity known | ❌ unattributed_proxy | ✅ 57 posts removed | ⚠️ Not appealed (editorial decision) | ✅ SRC-019; SRC-020 | 🔍 Obtain Armani denial statement as primary source (currently inferred) |
-| RESP-003 | ⚠️ Same as RESP-002 | ❌ unattributed_proxy | ✅ Posts removed | ⚠️ Not appealed | ✅ SRC-019 | 🔍 Same; single source |
+| RESP-001 | ❌ Not disclosed | ❌ unattributed_proxy | ✅ Page removed (~41 000 followers), later restored | ✅ Restored after RSF intervention (2026-11-24 update) | ✅ SRC-018 | ⚠️ Restoration recorded on the Provereno team's information; public source for the restoration still to be attached. Vendor gap is core research gap for entire Respublika campaign |
+| RESP-002 | ⚠️ Giorgio Armani named but denied; no filing identity known | ❌ unattributed_proxy | ✅ 57 posts removed; restoration claimed (SRC-058, SRC-059), not confirmed with newsroom | ⚠️ Not appealed (editorial decision) | ✅ SRC-019; SRC-020; SRC-058; SRC-059 | 🔍 Obtain Armani denial statement as primary source (currently inferred) |
+| RESP-003 | ⚠️ Same as RESP-002 | ❌ unattributed_proxy | ✅ Posts removed; restoration claimed (SRC-058, SRC-059), not confirmed with newsroom | ⚠️ Not appealed | ✅ SRC-019; SRC-052; SRC-058; SRC-059 | 🔍 Same; confirm restoration with newsroom |
 | RESP-004 | ✅ AiPlex named in notice | ✅ claimed_affiliation | ✅ 6 posts removed | ❌ Unknown | ✅ SRC-020; SRC-021; SRC-031 (closed vault); SRC-038 | 🔍 No Google TR snapshot attached (`sender_volume_evidence` cites SRC-038); notices in the vault contain a MarkScan domain address |
 | RESP-005 | ✅ AiPlex named | ✅ claimed_affiliation | ✅ Wave of removals documented (21→61→358) | ❌ Unknown | ✅ SRC-022; SRC-021; SRC-032 (closed vault); SRC-038 | 🔍 No Google TR snapshot attached; confirm exact removal counts with editorial; notices in the vault contain a MarkScan domain address |
-| RESP-006 | ❌ Not disclosed | ❌ unattributed_proxy | ✅ Seven block/removal events documented | ❌ Unknown | ✅ SRC-022 | ⚠️ Single source; no vendor. Temporal clustering with RESP-004/005 is circumstantial evidence of same campaign |
+| RESP-006 | ❌ Not disclosed | ❌ unattributed_proxy | ✅ Seven block/removal events documented | ⚠️ Partially restored | ✅ SRC-022; SRC-060; SRC-061 | ⚠️ Single source; no vendor. Temporal clustering with RESP-004/005 is circumstantial evidence of same campaign |
 
-**Cluster priority (HIGH):** The RESP-001 permanent page loss is the most severe documented outcome in the dataset and currently rests on a single source. Vendor gap for RESP-001/002/003/006 is the largest open research question in the Kazakhstan cluster.
+**Cluster priority (HIGH):** RESP-001 was recoded from permanent loss to restored (2026-11-24); a public source for the restoration is needed. Vendor gap for RESP-001/002/003/006 is the largest open research question in the Kazakhstan cluster.
 
 ---
 
@@ -118,7 +118,7 @@ Each case row is assessed across five dimensions:
 | Case ID | Claimant identity | Vendor attribution | Platform action | Appeal outcome | Source count | Blocker |
 |---------|------------------|--------------------|-----------------|----------------|--------------|---------|
 | LMC-001 | ⚠️ Najib Abdul Rahman Khalid (account name as quoted by the foundation); identity not verified | ❌ unattributed_proxy | ✅ Channel blocked and restored | ✅ Restored next day | ✅ SRC-023 | 🔍 Verify Khalid identity in open databases; single source |
-| LMC-002 | ⚠️ AiPlex reported as claimant; attribution inferred from timing (SRC-033) | ⚠️ claimed_affiliation; no primary Meta notice | ✅ Account deactivated | ❌ Unknown | ✅ SRC-024; SRC-025; SRC-021; SRC-033 (inferred); SRC-038 | 🔍 Confirm restoration/current status with target; obtain primary notice |
+| LMC-002 | ⚠️ AiPlex reported as claimant; attribution inferred from timing (SRC-033) | ⚠️ claimed_affiliation; no primary Meta notice | ✅ Account deactivated 16 Apr, restored after ~2 weeks | ✅ Restored (SRC-057) | ✅ SRC-024; SRC-025; SRC-021; SRC-033 (inferred); SRC-038; SRC-057 | 🔍 Obtain primary notice; Meta notice reportedly cited fraud and deception, not copyright — check `enforcement_basis` |
 | LMC-003 | ⚠️ AiPlex reported as claimant; attribution inferred from timing (SRC-034) | ⚠️ claimed_affiliation; no primary Meta notice | ✅ Page blocked | ✅ Restored after ~1 month | ✅ SRC-024; SRC-025; SRC-026; SRC-034 (inferred); SRC-038 | ⚠️ AiPlex attribution inferred; no primary Meta notice |
 
 ---
@@ -176,7 +176,7 @@ Ordered by impact on publication readiness:
 
 1. **MON-001 second source** — WhatsApp exchange corroboration. Highest narrative value case.
 2. **GAYLAN-001 legal notice document** — Parliamentary accusation; needed for policy brief.
-3. **RESP-001 second source** — Permanent page loss; most severe outcome in dataset.
+3. **RESP-001 restoration source** — Page restored after RSF intervention; attach a public or vault source.
 4. **AIPLEX-001 second public source** — Now `Confirmed`; add a second public source that documents the removals.
 5. **ACT-004 (Ares Rights) registry record** — Needed before Ares Rights can be used as a confirmed vendor in outputs.
 6. **ACT-005 (Initiatrix Technologies) registry record** — Same rationale.
