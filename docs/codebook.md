@@ -108,6 +108,7 @@ The primary dataset documents observed episodes where platform notice-and-action
 #### 1.2.8 `appeal_outcome`
 - `restored_editorial_appeal`: Restored after informal pressure, high-level mediation, or direct outreach by civil society/NGO partners.
 - `restored_formal_counternotice`: Restored via statutory DMCA counter-notification or formal platform appeal workflow.
+- `partially_restored`: Some of the account blocks or removed material within the episode were reversed, while others remained in force at the last observation.
 - `rejected`: Platform formally reviewed and upheld the takedown or deactivation.
 - `pending`: Appeal process is currently active or unresolved.
 - `not_appealed`: Target did not or could not appeal (e.g., fear of jurisdiction submission, lack of technical capacity).

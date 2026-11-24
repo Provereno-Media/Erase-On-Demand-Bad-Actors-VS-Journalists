@@ -6,7 +6,7 @@ On **23 February 2026**, the public foundation's YouTube channel was blocked fol
 
 ## April 2026 — Instagram
 
-In **April 2026**, the organization's Instagram account was fully deactivated following restrictions and copyright-related complaints reportedly associated with AiPlex Software Pvt Ltd, using an automated mass-filing pattern. No restoration has been recorded for this episode.
+On **16 April 2026**, the organization's Instagram account was fully deactivated following restrictions and copyright-related complaints reportedly associated with AiPlex Software Pvt Ltd, using an automated mass-filing pattern. Messaging was first restricted and an identity check requested; after the check, the account was blocked. According to the centre, Meta's notice cited fraud and deception. The account was restored after almost two weeks, and Meta sent an apology for an error (BES.media, 28 April 2026). The route to restoration is not described in the source.
 
 ## 21 April 2026 — Facebook
 
