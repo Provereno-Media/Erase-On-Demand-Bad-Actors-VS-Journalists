@@ -9,6 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed (data, 2026-11-25): context-case sources; AsiaTerra
+- `comparative_cases.csv`: free-text `source_urls` replaced by `source_ids` referencing `sources.csv` (schema, codebook §2.1 and `validate.py` updated; the validator now checks context-case sources).
+- Context cases re-checked against sources (SRC-065–SRC-076):
+  - `CTX-RTBF-001`: demands were addressed to PrimaDaNoi, not Google (~240 demands, ~40 in court); period corrected to 2008–2018, ECtHR ruling 2021.
+  - `CTX-UZ-001`: grounds corrected (mostly copyright complaints, some from impersonating profiles); AsiaTerra moved to the main dataset.
+  - `CTX-TG-001`: dates and topic of the removed posts added from the newsroom's Telegram post.
+  - `CTX-REC-001`: limited to the January 2019 K-pop removals; the 2018 Spider-Man Content ID error was not attributed to AiPlex and is dropped.
+  - `CTX-PERS-001`: claims about clone channels and login attempts removed (not supported by the cited source).
+- New episodes `ASIATERRA-001` (Facebook page removed early April 2026, later restored; `Confirmed`) and `ASIATERRA-002` (removed again on 9 May 2026; `Unverified`), campaign `CAMP-ASIATERRA-2026`.
+- README dataset counts updated (37 episodes, 24 campaigns).
+
 ### Added (data, 2026-11-25): European targets
 - `LEMONDE-001` (new campaign `CAMP-LEMONDE-STORYKILLERS-2024`): DMCA complaint signed "Jonesburg Law & Co." delisted Le Monde's Story Killers investigation into Team Jorge from Google Search, 28 March 2024; restored after a counter-notice. Coded `Confirmed`: La Marea (SRC-063) and the Lumen record checked by a researcher (SRC-064, `researcher_verification`). The sender is unattributed; `motive_category` is coded `commercial_reputation_scrubbing` as the closest available value.
 - `CTX-MT-001` in `comparative_cases.csv`: copyright complaints to Google against Maltese websites covering the state hospitals privatisation deal, from March 2024 (Times of Malta, May 2024; EDMO/MedDMO, January 2025). Kept as context until target outlets and notices are identified in Lumen.

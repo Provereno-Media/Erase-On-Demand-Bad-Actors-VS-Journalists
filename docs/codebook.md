@@ -168,7 +168,7 @@ This dataset documents relevant incidents that illustrate structural moderation 
 | `threat_type` | Enum | Classification: `rtbf_gdpr_legal`, `personal_journalist_attack`, `disinformation_clone`, `slapp_litigation`, `mass_repetition_benchmark`, `unattributed_takedown` (notice-and-action takedown against a newsroom whose sender has not been identified or linked to a documented actor). |
 | `exclusion_reason` | String | Methodological reason why this entry is excluded from `cases.csv` (see `methodology.md` §4). |
 | `summary` | String | Factual summary and relevance to platform accountability. |
-| `source_urls` | String | Primary references or investigative reports. |
+| `source_ids` | String | Semicolon-separated identifiers referencing records in `data/sources.csv` (e.g., `SRC-058;SRC-068`). |
 
 ---
 

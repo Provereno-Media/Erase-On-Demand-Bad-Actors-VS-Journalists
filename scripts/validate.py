@@ -17,6 +17,11 @@ for c in cases:
     if c["confidence"] not in ("Confirmed", "Unverified", "Plausible"): err.append(f"{c['case_id']}: bad confidence {c['confidence']}")
     if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", c.get("last_verified", "")): err.append(f"{c['case_id']}: bad last_verified")
     if not re.fullmatch(r"FP[1-6](,FP[1-6])*", c.get("failure_points", "")): err.append(f"{c['case_id']}: bad failure_points {c.get('failure_points')!r}")
+for x in comp:
+    ids = [s for s in re.split(r"[;,]\s*", x.get("source_ids", "")) if s]
+    if not ids: err.append(f"{x['context_id']}: no source_ids")
+    for s in ids:
+        if s not in src_ids: err.append(f"{x['context_id']}: unknown source {s}")
 pkg = json.load(open(D / "datapackage.json"))
 for r in pkg["resources"]:
     n = r["name"]; hdr = next(csv.reader(open(D / f"{n}.csv", encoding="utf-8")))

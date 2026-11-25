@@ -464,7 +464,7 @@
             }
           },
           {
-            "name": "source_urls",
+            "name": "source_ids",
             "type": "string"
           }
         ],
