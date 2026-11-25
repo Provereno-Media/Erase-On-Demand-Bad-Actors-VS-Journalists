@@ -2,8 +2,11 @@
 
 This repository documents verified cases of abuse of platform content-moderation
 and notice-and-takedown systems used to silence independent media, journalists'
-organizations, and civil society groups. The project is developed by Provereno
+organizations, and civil society groups. Provereno develops the project
 Media under the EU [Citizens, Equality, Rights and Values (CERV) programme](https://efcsn.com/cerv-2026/) through the European Fact-Checking Standards Network (EFCSN).
+
+**Co-funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor the granting authority can be held responsible for them.**
+<img width="1200" height="257" alt="EU-logo" src="https://github.com/user-attachments/assets/c79d0e4a-2dcf-4546-88a4-68b2b6314a2d" />
 
 ## Interactive Dataset
 
@@ -168,8 +171,4 @@ The following large language models and AI tools were used in preparing this stu
 - Claude Opus 5.5: for configuring the interactive dashboard and for automating the ongoing addition of new cases to the repository structure
 - Claude Fable 5.2: for the draft English translation of the study
 
-All data, as well as the accuracy of the translation against the original Russian-language study, were independently verified by the study’s authors and editors.
-
-**Co-funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor the granting authority can be held responsible for them.**
-
-<img width="1200" height="257" alt="EU-logo" src="https://github.com/user-attachments/assets/c79d0e4a-2dcf-4546-88a4-68b2b6314a2d" />
+All data were independently verified by the study’s authors and editors.
