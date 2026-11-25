@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed (CI, 2026-11-25): Pages workflow
+- `pages.yml` split into `build` and `deploy` jobs (`deploy` needs `build`), so the deploy step no longer queries the `github-pages` artifact in the same job that uploaded it — the cause of the failed run 45219250948 ("No artifacts named github-pages were found").
+- The site is now also built (not deployed) on pull requests that touch `site/`, `data/` or the workflow.
+- Actions updated to Node 24 majors: `checkout@v7`, `configure-pages@v6`, `upload-pages-artifact@v5`, `deploy-pages@v5`. Deploys to the `github-pages` environment are no longer cancelled mid-run by a newer push.
+
 ### Changed (data, 2026-11-24): restoration status, Kazakhstan cluster
 - `RESP-001`: `appeal_outcome` `permanent_loss` → `restored_editorial_appeal` (page restored after an RSF intervention, confirmed by a Provereno researcher; SRC-062).
 - `LMC-002`: `appeal_outcome` `unknown` → `restored_editorial_appeal`; `date_start` set to 2026-04-16; summary records that Meta's notice reportedly cited fraud and deception (SRC-057). `failure_points` gains `FP6`, and `dsa_articles_implicated` is updated accordingly (§1.2.10).
