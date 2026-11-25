@@ -10,8 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added (data, 2026-11-25): European targets in comparative cases
-- `CTX-FR-001`: fake copyright complaint ("Jonesburg Law & Co.") that delisted Le Monde's Story Killers investigation into Team Jorge from Google Search, 28 March 2024; restored after a counter-notice (Lumen notice 40471185, La Marea).
-- `CTX-MT-001`: copyright complaints to Google against Maltese websites covering the state hospitals privatisation deal, from March 2024 (Times of Malta, EDMO).
+- `CTX-FR-001`: fake copyright complaint ("Jonesburg Law & Co.") that delisted Le Monde's Story Killers investigation into Team Jorge from Google Search, 28 March 2024; restored after a counter-notice (Lumen notice 40471185; La Marea, 18 June 2024).
+- `CTX-MT-001`: copyright complaints to Google against Maltese websites covering the state hospitals privatisation deal, from March 2024 (Times of Malta, May 2024; EDMO/MedDMO, January 2025).
 - New `threat_type` value `unattributed_takedown` (`codebook.md` §2.1). Both entries accompany Part 3.3 of the report; senders have not been identified.
 
 ### Changed (CI, 2026-11-25): Pages workflow
