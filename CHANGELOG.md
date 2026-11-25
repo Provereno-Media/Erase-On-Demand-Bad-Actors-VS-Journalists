@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added (data, 2026-11-25): European targets in comparative cases
+- `CTX-FR-001`: fake copyright complaint ("Jonesburg Law & Co.") that delisted Le Monde's Story Killers investigation into Team Jorge from Google Search, 28 March 2024; restored after a counter-notice (Lumen notice 40471185, La Marea).
+- `CTX-MT-001`: copyright complaints to Google against Maltese websites covering the state hospitals privatisation deal, from March 2024 (Times of Malta, EDMO).
+- New `threat_type` value `unattributed_takedown` (`codebook.md` §2.1). Both entries accompany Part 3.3 of the report; senders have not been identified.
+
 ### Changed (CI, 2026-11-25): Pages workflow
 - `pages.yml` split into `build` and `deploy` jobs (`deploy` needs `build`), so the deploy step no longer queries the `github-pages` artifact in the same job that uploaded it — the cause of the failed run 45219250948 ("No artifacts named github-pages were found").
 - The site is now also built (not deployed) on pull requests that touch `site/`, `data/` or the workflow.
