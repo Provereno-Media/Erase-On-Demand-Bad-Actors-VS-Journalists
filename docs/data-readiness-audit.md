@@ -183,6 +183,8 @@ Ordered by impact on publication readiness:
 7. **ELIM-008 vendor attribution upgrade** — Only Eliminalia case where vendor link is weak.
 8. **Google TR snapshot archival** (RESP-004/005, LMC-002/003, GAYLAN-001) — Not attached; `sender_volume_evidence` now cites public articles instead. Volatile evidence; archive immediately.
 9. **SRC-022 link** — Title refers to the April 2026 wave counts and Instagram statistics, but the URL points to post 14258 (8 March 2026, 'Giorgio Armani' removals). Find the correct April post(s) and fix the URL; check SRC-033 (same URL) as well.
+10. **LEMONDE-001 archive** — Lumen notice 40471185 checked by a researcher (SRC-064, 2026-11-25); add a Wayback snapshot to `archive_url` and confirm the claimed Frontier Times "original" URL (`abuse_mechanism = backdated_article`).
+11. **Malta (CTX-MT-001)** — Retrieve the Lumen notices behind Google's removal messages for Maltese news sites and blogs (search terms used by EDMO/MedDMO: "ram tumuluri", "vitals global healthcare") to identify target outlets, dates and claimants; episodes meeting §3 criteria move to `cases.csv`.
 
 ---
 

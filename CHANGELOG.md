@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added (data, 2026-11-25): European targets
+- `LEMONDE-001` (new campaign `CAMP-LEMONDE-STORYKILLERS-2024`): DMCA complaint signed "Jonesburg Law & Co." delisted Le Monde's Story Killers investigation into Team Jorge from Google Search, 28 March 2024; restored after a counter-notice. Coded `Confirmed`: La Marea (SRC-063) and the Lumen record checked by a researcher (SRC-064, `researcher_verification`). The sender is unattributed; `motive_category` is coded `commercial_reputation_scrubbing` as the closest available value.
+- `CTX-MT-001` in `comparative_cases.csv`: copyright complaints to Google against Maltese websites covering the state hospitals privatisation deal, from March 2024 (Times of Malta, May 2024; EDMO/MedDMO, January 2025). Kept as context until target outlets and notices are identified in Lumen.
+- New sources SRC-063 (La Marea, 18 June 2024) and SRC-064 (Lumen notice 40471185, researcher-checked).
+- New `threat_type` value `unattributed_takedown` (`codebook.md` §2.1).
+- README dataset counts updated (35 episodes, 23 campaigns, 33 `Confirmed`); Lumen checks for LEMONDE-001 and Malta added to the Priority Research Queue.
+
 ### Changed (CI, 2026-11-25): Pages workflow
 - `pages.yml` split into `build` and `deploy` jobs (`deploy` needs `build`), so the deploy step no longer queries the `github-pages` artifact in the same job that uploaded it — the cause of the failed run 45219250948 ("No artifacts named github-pages were found").
 - The site is now also built (not deployed) on pull requests that touch `site/`, `data/` or the workflow.
