@@ -13,6 +13,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `ARES-003` (Plan V, December 2015): sender recoded from Ares Rights (`claimed_affiliation`) to `Unknown` / `unattributed_proxy`, since neither CPJ nor other sources name the sender of this complaint; moved to campaign `CAMP-PLANV-2015`. Case ID kept for continuity.
 - New context cases: `CTX-EC-001` ("Acoso a Intag" removed from the director's personal YouTube account, 9 October 2013) and `CTX-EC-002` (Ares Rights complaints on behalf of SECOM to CloudFlare and AWS against Fundamedios, December 2015; no platform action documented).
 - New `threat_type` value `no_platform_action` (codebook §2.1); sources SRC-077–SRC-080.
+- New Ares Rights episodes: `LAREP-001` (LaRepública's YouTube channel terminated, 13 January 2014; `Confirmed`), `LAREP-002` (LaRepública's website blocked for about 3.5 hours, 29 May 2014; `Unverified`), campaign `CAMP-ARES-LAREPUBLICA-2014`; `FOCUS-001` (Focus Ecuador taken offline by its host from 27 August 2015; `Unverified`), campaign `CAMP-ARES-FOCUS-2015`.
+- New context case `CTX-EC-003` (Santiago Villa's documentary removed from YouTube and Vimeo, December 2012).
+- Sources SRC-081–SRC-090. README counts: 40 episodes, 26 campaigns.
 
 ### Added (site, 2026-11-25): context cases
 - New "Context cases" section on the site, loaded from `comparative_cases.csv`: cards with type, country, period, the reason for exclusion, and expandable summary and sources; type filter; pointer below the cases table; "Context" item in the navigation; `comparative_cases.csv` linked in the footer. Context cases are not counted in the site's figures, filters or charts.
