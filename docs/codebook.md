@@ -165,7 +165,7 @@ This dataset documents relevant incidents that illustrate structural moderation 
 | `title` | String | Descriptive title of the case or incident group. |
 | `period` | String | Time period or specific date (e.g., `2016–2021`, `March 2026`). |
 | `country` | String (ISO 3166-1 alpha-2) | Geographic location of the target or events. |
-| `threat_type` | Enum | Classification: `rtbf_gdpr_legal`, `personal_journalist_attack`, `disinformation_clone`, `slapp_litigation`, `mass_repetition_benchmark`, `excluded_platform` (episode on a platform outside the dataset's scope, e.g. Telegram; see `methodology.md` §4), `unattributed_takedown` (notice-and-action takedown against a newsroom whose sender has not been identified or linked to a documented actor). |
+| `threat_type` | Enum | Classification: `rtbf_gdpr_legal`, `personal_journalist_attack`, `disinformation_clone`, `slapp_litigation`, `mass_repetition_benchmark`, `excluded_platform` (episode on a platform outside the dataset's scope, e.g. Telegram; see `methodology.md` §4), `no_platform_action` (complaint against a newsroom with no documented platform action, so methodology §3 criterion 3 is not met), `unattributed_takedown` (notice-and-action takedown against a newsroom whose sender has not been identified or linked to a documented actor). |
 | `exclusion_reason` | String | Methodological reason why this entry is excluded from `cases.csv` (see `methodology.md` §4). |
 | `summary` | String | Factual summary and relevance to platform accountability. |
 | `source_ids` | String | Semicolon-separated identifiers referencing records in `data/sources.csv` (e.g., `SRC-058;SRC-068`). |

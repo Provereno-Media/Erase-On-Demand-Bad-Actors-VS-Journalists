@@ -2,7 +2,7 @@
 
 ## 29 December 2015 (ARES-003)
 
-Plan V received a copyright complaint over photos accompanying a report that questioned contracts at the state-owned Esmeraldas refinery. Its director, Juan Carlos Calderón, told CPJ (SRC-040) that the photos were taken from the public domain or protected by fair use, and that they were taken down. CPJ lists the Plan V images among content targeted by Ares Rights but does not name the sender of this specific complaint or the host that removed the photos. No appeal outcome is documented.
+Plan V received a copyright complaint over photos accompanying a report that questioned contracts at the state-owned Esmeraldas refinery. Its director, Juan Carlos Calderón, told CPJ (SRC-040) that the photos were taken from the public domain or protected by fair use, and that they were taken down. CPJ lists the Plan V images among content targeted by Ares Rights but does not name the sender of this specific complaint or the host that removed the photos. No appeal outcome is documented. Because no source names the sender of this complaint, it is coded `vendor_attribution = unattributed_proxy` with claimant `Unknown` (2026-11-26; previously `claimed_affiliation` to Ares Rights). The case ID is kept for continuity.
 
 Motive category: political state censorship. Confidence: Unverified — single source, with the removal reported by the target.
 

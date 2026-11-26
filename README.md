@@ -150,7 +150,7 @@ correction.
 
 ## Known Limitations (v1.0.4) as of November 18, 2026
 
-- 37 episodes in 24 campaigns: 34 `Confirmed` and 3 `Unverified` (ARES-002, ARES-003, ASIATERRA-002) as of November 25, 2026.
+- 37 episodes in 24 campaigns (ARES-003 moved to its own campaign, CAMP-PLANV-2015): 34 `Confirmed` and 3 `Unverified` (ARES-002, ARES-003, ASIATERRA-002) as of November 25, 2026.
 - Researcher verifications for single-source `Confirmed` episodes are recorded as `researcher_verification` entries in `data/sources.csv`: Lumen Database records and a Wayback Machine snapshot (`SRC-043`–`SRC-048`) and written confirmations from the affected newsrooms obtained in August 2026 (`SRC-049`–`SRC-054`). The newsroom correspondence is held in the closed evidence vault and is not published. `ELIM-007` (domain registrar episode) and `ELIM-008` remain `Confirmed` on the basis of `SRC-008` and `SRC-009` respectively, without a separate published `researcher_verification` entry.
 - GAYLAN-001 and RESP-001 rely on a limited number of independent sources; see `docs/data-readiness-audit.md`. For GAYLAN-001, three of the four listed sources point to the same public statement by the MP; the fourth, `SRC-035`, is a screenshot of the Meta notice itself (`data/case-notes/Gaylan/Gaylan1.jpeg`).
 - `SRC-031` and `SRC-032` (Meta notices naming AiPlex in `RESP-004` and `RESP-005`) are held in the closed evidence vault and are not publicly archived.
