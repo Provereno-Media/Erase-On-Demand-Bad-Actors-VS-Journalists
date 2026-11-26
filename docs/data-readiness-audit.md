@@ -37,7 +37,7 @@ Each case row is assessed across five dimensions:
 |---------|------------------|--------------------|-----------------|----------------|--------------|---------|
 | ARES-001 | ⚠️ Ares Rights self-identified in notices | ⚠️ claimed_affiliation only | ✅ Removed from Scribd and Dropbox, restored | ✅ Restored (EFF: counter-notice; CPJ: host switch) | ✅ SRC-001; SRC-040 | — |
 | ARES-002 | ⚠️ Same as above | ⚠️ claimed_affiliation only | ⚠️ Removal reported by EFF and Chevron | ❌ Restoration not documented | ⚠️ SRC-001; SRC-041; SRC-042 (Chevron statement relayed) | 🔍 `Unverified`: Lumen notice or Wayback snapshot of youtube.com/texacoecuador needed |
-| ARES-003 | ❌ Sender of this complaint not named by CPJ | ⚠️ claimed_affiliation (CPJ lists Plan V among Ares Rights targets) | ⚠️ Removal reported by Plan V director; host unknown | ❌ Outcome unknown | ⚠️ SRC-040 | 🔍 `Unverified`: Lumen notice or Wayback snapshot of the Esmeraldas report needed |
+| ARES-003 | ❌ Sender of this complaint not named by CPJ | ⚠️ unattributed_proxy (recoded 2026-11-26; CPJ lists Plan V among Ares Rights targets but not as sender of this complaint) | ⚠️ Removal reported by Plan V director; host unknown | ❌ Outcome unknown | ⚠️ SRC-040 | 🔍 `Unverified`: Lumen notice or Wayback snapshot of the Esmeraldas report needed |
 
 **Cluster priority:** ✅ Ares Rights SL registry record obtained from BORME (2026-09-28). Remaining: fresh Registro Mercantil extract for current status. 2026-10-14: SRC-002 (a Qurium report on Eliminalia that does not mention Ares Rights) removed from ARES-001/002; SRC-001 (EFF, May 2014) removed from ARES-003, which it predates. ARES-002 and ARES-003 recoded `Unverified` pending Lumen or Wayback verification.
 
