@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added (site, 2026-11-25): context cases
+- New "Context cases" section on the site, loaded from `comparative_cases.csv`: cards with type, country, period, the reason for exclusion, and expandable summary and sources; type filter; pointer below the cases table; "Context" item in the navigation; `comparative_cases.csv` linked in the footer. Context cases are not counted in the site's figures, filters or charts.
+- `CTX-TG-001` recoded from `personal_journalist_attack` to the new `threat_type` value `excluded_platform` (Telegram is out of scope; the target is a newsroom, not a personal account).
+
 ### Changed (data, 2026-11-25): context-case sources; AsiaTerra
 - `comparative_cases.csv`: free-text `source_urls` replaced by `source_ids` referencing `sources.csv` (schema, codebook §2.1 and `validate.py` updated; the validator now checks context-case sources).
 - Context cases re-checked against sources (SRC-065–SRC-076):
